@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#Fondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#oscura{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 45%;
+}
+
+#proyectos{
+    font-family: calibri;
+    font-size: 65px;
+    position: absolute;
+    left: 32%;
+    top: 10%;
+    color: white;
+    border-bottom: 2px  solid white;
+    border-top: 2px  solid white;
+    background-color: transparent;
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+
+#cobra{
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px black;
+}
+#cobra:hover{
+    width: 325px;
+    height: 325px;
+    left: 9.5%;
+
+    transition: 0.2s all;
+}
+#calculadora{
+    width: 345px;
+    height: 320px;
+    position: absolute;
+    top: 32%;
+    left: 37%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px black;
+}
+#calculadora:hover{
+    width: 350px;
+    height: 325px;
+    left: 36.8%;
+
+    transition: 0.2s all;
+}
+#snake{
+    width: 345px;
+    height: 320px;
+    position: absolute;
+    top: 32%;
+    left: 66%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px black;
+}
+#snake:hover{
+    width: 350px;
+    height: 325px;
+    left: 66.2%;
+
+    transition: 0.2s all;
+}
+
+#github{
+    position: absolute;
+    top: 87%;
+    left: 47.5%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    opacity: 45%;
+}
+#github:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+#progreso{
+    color: white;
+    background-color: transparent;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: calibri;
+    font-size: 25px;
+    position: absolute;
+    top: 80.5%;
+    left: 12%;
+    width: 260px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px solid black;
+    opacity: 45%;
+    cursor: default;
+}
+#progreso:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+#inicio{
+    position: absolute;
+    top: 8%;
+    left: 85%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    opacity: 45%;
+}
+#inicio:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}

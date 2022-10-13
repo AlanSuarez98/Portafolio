@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#fondo{
+    width: 100%;
+    height: 100%;
+}
+#oscura{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 45%;
+}
+#Perfil{
+    position: absolute;
+    width: 400px;
+    height: 550px;
+    left: 905px;
+    top: -3%;
+}
+#Hola{
+    font-family: calibri;
+    font-size: 60px;
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    left: 30px;
+    top: 15%;
+    text-shadow: 2px 2px 3px black;
+    cursor: default;
+}
+
+#nombre{
+    font-family: calibri;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 23%;
+    left: 30px;
+    text-shadow: 2px 2px 3px black;
+    cursor: default;
+}
+
+#Hello{
+    font-family: calibri;
+    font-size: 60px;
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    left: 30px;
+    top: 33%;
+    text-shadow: 2px 2px 3px black;
+    opacity: 20%;
+    cursor: default;
+}
+#Hello:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+#name{
+    font-family: calibri;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 41%;
+    left: 30px;
+    text-shadow: 2px 2px 3px black;
+    opacity: 20%;
+    cursor: default;
+}
+#name:hover{
+    opacity: 100%;
+    
+    transition: 0.2s all;
+}
+
+#email{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 30px;
+    text-shadow: 2px 2px 3px black;
+    opacity: 45%;
+    cursor: default;
+}
+
+#email:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+#textemail{
+    color: white;
+    font-family: calibri;
+    font-size: 25px;
+    position: absolute;
+    top: 55%;
+    left: 70px;
+    text-shadow: 2px 2px 3px black;
+    opacity: 45%;
+    cursor: default;
+}
+#textemail:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#number{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 63%;
+    left: 30px;
+    text-shadow: 2px 2px 3px black;
+    opacity: 45%;
+    cursor: default;
+}
+#number:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+#textnumber{
+    color: white;
+    font-family: calibri;
+    font-size: 20px;
+    position: absolute;
+    top: 63%;
+    left: 70px;
+    text-shadow: 2px 2px 3px black;
+    opacity: 45%;
+    cursor: default;
+}
+#textnumber:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#facebook{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    position: absolute;
+    left: 930px;
+    top: 65%;
+    opacity: 45%;
+}
+#facebook:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+#instagram {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    position: absolute;
+    left: 1010px;
+    top: 65%;
+    opacity: 45%;
+}
+#instagram:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#twitter{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    position: absolute;
+    left: 1090px;
+    top: 65%;
+    opacity: 45%;
+}
+#twitter:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#github{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    position: absolute;
+    left: 1170px;
+    top: 65%;
+    opacity: 45%;
+}
+#github:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#linkedin{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    position: absolute;
+    left: 1250px;
+    top: 65%;
+    opacity: 45%;
+}
+#linkedin:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#proyectos{
+    font-family: calibri;
+    font-size: 30px;
+    position: absolute;
+    left: 30px;
+    top: 90%;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
+}
+#proyectos:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#sobremi{
+    font-family: calibri;
+    font-size: 30px;
+    position: absolute;
+    left: 230px;
+    top: 90%;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
+}
+#sobremi:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#laboral{
+    font-family: calibri;
+    font-size: 30px;
+    position: absolute;
+    left: 430px;
+    top: 90%;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
+}
+#laboral:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#educacion{
+    font-family: calibri;
+    font-size: 30px;
+    position: absolute;
+    left: 630px;
+    top: 90%;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
+}
+#educacion:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#skills{
+    font-family: calibri;
+    font-size: 30px;
+    position: absolute;
+    left: 830px;
+    top: 90%;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
+}
+#skills:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#cv{
+    font-family: calibri;
+    font-size: 30px;
+    position: absolute;
+    left: 1030px;
+    top: 90%;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    opacity: 50%;
+    text-shadow: 2px 2px 3px black;
+    box-shadow: 2px 2px 3px black;
+}
+#cv:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
+
+#code{
+    color: white;
+    position: absolute;
+    top: 89%;
+    left: 1250px;
+    opacity: 50%;
+}
+#code:hover{
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
