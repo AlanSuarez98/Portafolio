@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fondo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#oscura{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 45%;
+}
+#educacion{
+    font-family: calibri;
+    font-size: 50px;
+    position: absolute;
+    left: 34%;
+    top: 10%;
+    color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    background-color: transparent;
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#punto1{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 12%;
+    top: 34%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#utn{
+    font-family: calibri;
+    font-size: 24px;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#p1{
+    font-family: calibri;
+    font-size: 20px;
+    position: absolute;
+    left: 15%;
+    top: 35%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    cursor: default;
+}
+#p2{
+    font-family: calibri;
+    font-size: 20px;
+    position: absolute;
+    left: 15%;
+    top: 39%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#punto2{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 12%;
+    top: 54%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#eempa{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#p3{
+    font-family: calibri;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#p4{
+    font-family: calibri;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 59%;
+    left: 15%;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#punto3{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 12%;
+    top: 74%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#tecnica{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#p5{
+    font-family: calibri;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 15%;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#p6{
+    font-family: calibri;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 79%;
+    left: 15%;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#cursos{
+    font-family: calibri;
+    font-size: 35px;
+    position: absolute;
+    left: 62%;
+    top: 30%;
+    color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    background-color: transparent;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+
+#punto4{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 60%;
+    top: 49%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#digitalers{
+    font-family: calibri;
+    font-size: 24px;
+    position: absolute;
+    left: 62%;
+    top: 42%;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#p7{
+    font-family: calibri;
+    font-size: 20px;
+    position: absolute;
+    left: 62%;
+    top: 47%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#p8{
+    font-family: calibri;
+    font-size: 20px;
+    position: absolute;
+    left: 62%;
+    top: 51%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#p9{
+    font-family: calibri;
+    font-size: 20px;
+    position: absolute;
+    left: 62%;
+    top: 55%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#punto5{
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    left: 60%;
+    top: 75%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#fagdut{
+    font-family: calibri;
+    font-size: 24px;
+    position: absolute;
+    left: 62%;
+    top: 70%;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#p10{
+    font-family: calibri;
+    font-size: 20px;
+    position: absolute;
+    left: 62%;
+    top: 75%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+#p11{
+    font-family: calibri;
+    font-size: 20px;
+    position: absolute;
+    left: 62%;
+    top: 79%;
+    color: white;
+    cursor: default;
+    text-shadow: 2px 2px 3px black;
+}
+
+#inicio {
+    position: absolute;
+    top: 87%;
+    left: 47.5%;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    opacity: 45%;
+}
+
+#inicio:hover {
+    opacity: 100%;
+
+    transition: 0.2s all;
+}
