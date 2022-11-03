@@ -282,3 +282,14 @@
 
     transition: 0.2s all;
 }
+
+.curriculum
+{
+    color: white;
+    position: absolute;
+    text-shadow: 2px 2px 3px black;
+    opacity: 45%;
+    z-index: 9999;
+    top: 10%;
+    left: 65%;
+}
