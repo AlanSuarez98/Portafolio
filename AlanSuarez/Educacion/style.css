@@ -283,13 +283,21 @@
     transition: 0.2s all;
 }
 
-.curriculum
+#curriculum
 {
     color: white;
     position: absolute;
     text-shadow: 2px 2px 3px black;
     opacity: 45%;
     z-index: 9999;
-    top: 10%;
-    left: 65%;
+    top: 8%;
+    left: 77%;
+}
+#curriculum img{
+    width: 100px;
+    height: 100px;
+}
+#curriculum:hover{
+    opacity: 100%;
+    transition: 0.2s all;
 }
