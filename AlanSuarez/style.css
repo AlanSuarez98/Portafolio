@@ -1,656 +1,1347 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 header{
     position: absolute;
-    
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    
+    background: linear-gradient(to top, rgb(1, 48, 117),rgb(46, 116, 223) );
 }
 
-#FondoMovil{
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    width: 311px;
+    overflow: hidden;
+    white-space: nowrap;
     position: absolute;
-    width: 100%;
-    height: 100%;   
+    top: 75px;
+    left: 220px;
+}
+h1:hover{
+    animation: escribir 2s linear 1;
+}
+#dev{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    position: absolute;
+    top: 145px;
+    left: 270px;
+    opacity: 75%;
+    font-weight: lighter;
 }
 
-#oscura{
+@keyframes escribir {
+    0%{width: 63px;}
+    25%{width: 125px;}
+    50%{width: 187px;}
+    75%{width: 249px;}
+    100%{width: 311px;}
+}
+
+#descri{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: white;
+    width: 420px;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 45%;
+    top: 200px;
+    left: 195px;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    font-weight: lighter;
 }
 #Perfil{
+    width: 460px;
+    height: 540px;
     position: absolute;
-    width: 400px;
-    height: 550px;
-    left: 905px;
-    top: -3%;
+    left: 725px;
 }
-#Hola{
-    font-family: calibri;
-    font-size: 60px;
-    color: white;
-    background-color: transparent;
-    position: absolute;
-    left: 30px;
-    top: 15%;
-    text-shadow: 2px 2px 3px black;
-    cursor: default;
-}
-
-#nombre{
-    font-family: calibri;
-    font-size: 60px;
+#facebook{
     color: white;
     position: absolute;
-    top: 23%;
-    left: 30px;
-    text-shadow: 2px 2px 3px black;
-    cursor: default;
+    top: 450px;
+    left: 750px;
 }
-
-#Hello{
-    font-family: calibri;
-    font-size: 60px;
-    color: white;
-    background-color: transparent;
-    position: absolute;
-    left: 30px;
-    top: 33%;
-    text-shadow: 2px 2px 3px black;
-    opacity: 20%;
-    cursor: default;
+#facebook:hover{
+    animation: redes .3s linear 1;
+    color: rgb(4, 103, 250);
 }
-#Hello:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
-}
-#name{
-    font-family: calibri;
-    font-size: 60px;
+#instagram{
     color: white;
     position: absolute;
-    top: 41%;
-    left: 30px;
-    text-shadow: 2px 2px 3px black;
-    opacity: 20%;
-    cursor: default;
+    top: 450px;
+    left: 850px;
 }
-#name:hover{
-    opacity: 100%;
-    
-    transition: 0.2s all;
+#instagram:hover{
+    animation: redes .3s linear 1;
+    color: #f0428b;
+}
+#twitter{
+    color: white;
+    position: absolute;
+    top: 450px;
+    left: 950px;
+}
+#twitter:hover{
+    animation: redes .3s linear 1;
+    color: #1da9fa;
+}
+#github{
+    color: white;
+    position: absolute;
+    top: 450px;
+    left: 1050px;
+}
+#github:hover{
+    animation: redes .3s linear 1;
+    color: #0a0025;
+}
+#linkedin{
+    color: white;
+    position: absolute;
+    top: 450px;
+    left: 1150px;
+}
+#linkedin:hover{
+    animation: redes .3s linear 1;
+    color: rgb(4, 103, 250);
+}
+@keyframes redes {
+    0%{top: 450px;}
+    25%{top: 445px;}
+    50%{top: 440px;}
+    75%{top: 445px;}
+    100%{top: 450px;}
 }
 
 #email{
-    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
     color: white;
+    text-shadow: 1px 1px 3px black;
     position: absolute;
-    top: 55%;
-    left: 30px;
-    text-shadow: 2px 2px 3px black;
-    opacity: 45%;
+    top: 525px;
+    left: 800px;
     cursor: default;
+    opacity: 75%;
 }
-
 #email:hover{
     opacity: 100%;
-
-    transition: 0.2s all;
+    transition: 0.2s ease all;
 }
-#textemail{
-    color: white;
-    font-family: calibri;
-    font-size: 25px;
-    position: absolute;
-    top: 55%;
-    left: 70px;
-    text-shadow: 2px 2px 3px black;
-    opacity: 45%;
-    cursor: default;
-}
-#textemail:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
-}
-
 #number{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
     color: white;
-    text-decoration: none;
-    position: absolute;
-    top: 63%;
-    left: 30px;
-    text-shadow: 2px 2px 3px black;
-    opacity: 45%;
+    text-shadow: 1px 1px 3px black;
     cursor: default;
+    position: absolute;
+    top: 565px;
+    left: 860px;
+    opacity: 75%;
 }
 #number:hover{
     opacity: 100%;
-
-    transition: 0.2s all;
+    transition: 0.2s ease all;
 }
-#textnumber{
+#bars{
     color: white;
-    font-family: calibri;
-    font-size: 20px;
-    position: absolute;
-    top: 63%;
-    left: 70px;
-    text-shadow: 2px 2px 3px black;
-    opacity: 45%;
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 999px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+}
+#bars:hover{
+    border: 2px solid white;
+    color: white;
+    box-shadow: 1px 1px 3px black;
+    transition: 0.2s ease all;
+}
+.caja{
+    /*background-color: LightSlateGray;*/
+    background: linear-gradient(to top, rgb(86, 150, 247), rgb(46, 116, 223));
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    box-shadow: 1px 1px 3px black;
+    right: 0px;
+    border-left: 1px solid black;
+    display: flex;
+    visibility: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.3s ease all;
+    animation: cajaremove .5s linear 1;
+    /*transform: scale(0.7);*/
+    opacity: 0;
+
+}
+.caja.active{
+    visibility: visible;
+    opacity: 1;
+    animation: cajamove .5s linear 1;
+    /*transform: scale(1);*/
+}
+
+@keyframes cajamove {
+    0%{right: -300px;}
+    25%{right: -150px;}
+    50%{right: -100px;}
+    75%{right: -50px;}
+    100%{right: 0px;}
+}
+@keyframes cajaremove {
+    0% {right: 0px;}
+    25% {right: -50px;}
+    50% {right: -100px;}
+    75%{right: -150px;}
+    100% {right: -300px;}
+}
+.caja ul li{
+    margin-top: 45px;
+    list-style: none;
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    text-justify: center;
+    width: 300px;
+    height: 50px;
+    padding-top: 5px;
+    color: white;
+}
+.caja ul li a{
+    text-decoration: none;
+    text-justify: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
     cursor: default;
 }
-#textnumber:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
+.caja ul li:hover{
+    background-color: rgba(63, 135, 243, 0.705);
+    box-shadow: 1px 1px 3px black;
+    transition: 0.2s ease all;
 }
 
-#facebook{
-    text-decoration: none;
+#cruz{
     color: white;
-    text-shadow: 2px 2px 3px black;
     position: absolute;
-    left: 930px;
-    top: 65%;
-    opacity: 45%;
-}
-#facebook:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
-}
-#instagram {
-    text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px 3px black;
-    position: absolute;
-    left: 1010px;
-    top: 65%;
-    opacity: 45%;
-}
-#instagram:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
-}
-
-#twitter{
-    text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px 3px black;
-    position: absolute;
-    left: 1090px;
-    top: 65%;
-    opacity: 45%;
-}
-#twitter:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
-}
-
-#github{
-    text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px 3px black;
-    position: absolute;
-    left: 1170px;
-    top: 65%;
-    opacity: 45%;
-}
-#github:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
-}
-
-#linkedin{
-    text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px 3px black;
-    position: absolute;
-    left: 1250px;
-    top: 65%;
-    opacity: 45%;
-}
-#linkedin:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
-}
-
-#proyectos{
-    font-family: calibri;
-    font-size: 30px;
-    position: absolute;
-    left: 30px;
-    top: 90%;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-    width: 180px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
-    opacity: 50%;
-    text-shadow: 2px 2px 3px black;
-    box-shadow: 2px 2px 3px black;
+    align-items: center;
+    border-radius: 99px;
 }
-#proyectos:hover{
-    opacity: 100%;
+#cruz:hover{
+    border: 2px solid rgba(63, 135, 243, 0.705);
+    box-shadow: 1px 1px 3px black;
+    transition: 0.2s ease all;
 
-    transition: 0.2s all;
 }
-
-#sobremi{
-    font-family: calibri;
-    font-size: 30px;
+main{
     position: absolute;
-    left: 230px;
-    top: 90%;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    opacity: 50%;
-    text-shadow: 2px 2px 3px black;
-    box-shadow: 2px 2px 3px black;
+    top: 145%;
+    background-color: rgb(47, 47, 48);
+    width: 100%;
+    height: 420%;
+    z-index: 0px;
 }
-#sobremi:hover{
+/*#main{
+    position: absolute;
+    top: 145%;
+    width: 100%;
+    height: 500%;
+    color: white;
+    background-color: rgb(47, 47, 48);
+}*/
+#degrade{
+    position: absolute;
+    top: 100%;
     opacity: 100%;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, rgb(47, 47, 48),rgb(1, 48, 117));
+}
+#trabajos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    position: absolute;
+    left: 65px;
+}
+#works{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    opacity: 60%;
+    position: absolute;
+    left: 255px;
+}
+#works:hover{
+    opacity: 100%;
+    transition: 0.2s ease all;
+}
 
-    transition: 0.2s all;
+#cajaTrabajos{
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: -25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+}
+.works{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    overflow-y: hidden;
+    position: relative;
+    opacity: 97%;
+}
+.works:hover{
+    opacity: 100%;
+    border: 1px solid white;
+    box-shadow: 2px 2px 4px black;
+    transition: 0.2s ease all;
+}
+#nombreCobra{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 500px;
+    left: 156.5px;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    opacity: 30%;
+
+}
+#sombraCobra{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 498px;
+    left: 155px;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    cursor: default;
+}
+#sombraCobra:hover{
+    color: goldenrod;
+    transition: .2s ease all;
+}
+#sombraCalculadora{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 500px;
+    left: 531.5px;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    opacity: 30%;
+}
+#nombreCalculadora{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 498px;
+    left: 530px;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    cursor: default;
+}
+#nombreCalculadora:hover{
+    color: #06418dcc;
+    transition: .2s ease all;
+}
+#nombreSnake{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 498px;
+    left: 995px;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    cursor: default;
+}
+#nombreSnake:hover{
+    color: rgb(0, 156, 52);
+    transition: .2s ease all;
+}
+#sombraSnake{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 500px;
+    left: 996.5px;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    opacity: 30%;
+}
+
+#descri1{
+    position: absolute;
+    top: 550px;
+    left: 140px;
+    
+}
+#descri2{
+    position: absolute;
+    top: 550px;
+    left: 545px;
+}
+#descri3{
+    position: absolute;
+    top: 550px;
+    left: 970px;
+}
+.descri{
+    color: white;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 290px;
+    cursor: default;
+    text-shadow: 1px 1px 3px black;
 }
 
 #laboral{
-    font-family: calibri;
-    font-size: 30px;
-    position: absolute;
-    left: 430px;
-    top: 90%;
-    background-color: transparent;
-    border: 2px solid white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
     color: white;
-    text-decoration: none;
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    opacity: 50%;
-    text-shadow: 2px 2px 3px black;
-    box-shadow: 2px 2px 3px black;
+    position: absolute;
+    top: 850px;
+    left: 34%;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    text-decoration: underline;
 }
-#laboral:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
+.nombres{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
 }
-
+#nombre1{
+    position: absolute;
+    top: 1000px;
+    left: 170px;
+}
+.descrilaboral{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 22px;
+}
+#laboral1{
+    position: absolute;
+    top: 1050px;
+    left: 170px;
+}
+.puntos{
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: default;
+}
+#punto1{
+    position: absolute;
+    top: 1050px;
+    left: 130px;
+}
+#nombre2{
+    position: absolute;
+    top: 1000px;
+    left: 915px;
+}
+#laboral2{
+    position: absolute;
+    top: 1050px;
+    left: 915px;
+}
+#punto2{
+    position: absolute;
+    top: 1050px;
+    left: 875px;
+}
+#nombre3{
+    position: absolute;
+    top: 1250px;
+    left: 170px;
+}
+#laboral3{
+    position: absolute;
+    top: 1300px;
+    left: 170px;
+}
+#punto3{
+    position: absolute;
+    top: 1300px;
+    left: 130px;
+}
 #educacion{
-    font-family: calibri;
-    font-size: 30px;
-    position: absolute;
-    left: 630px;
-    top: 90%;
-    background-color: transparent;
-    border: 2px solid white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
     color: white;
-    text-decoration: none;
-    width: 180px;
+    position: absolute;
+    top: 1450px;
+    left: 40%;
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+}
+#nombreUTN{
+    position: absolute;
+    top: 1600px;
+    left: 150px;
+}
+#descriUTN{
+    position: absolute;
+    top: 1650px;
+    left: 150px;
+}
+#logoUTN{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 1625px;
+    left: 75px;
+}
+#nombreEMPA{
+    position: absolute;
+    top: 1800px;
+    left: 150px;
+}
+#descriEMPA{
+    position: absolute;
+    top: 1850px;
+    left: 150px;
+}
+#logoEMPA{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1825px;
+    left: 75px;
+}
+#cursos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 1550px;
+    left: 72%;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+    opacity: 75%;
+}
+#nombreDigi{
+    position: absolute;
+    top: 1625px;
+    left: 68%;
+    opacity: 75%;
+}
+#descriDigi{
+    position: absolute;
+    top: 1675px;
+    left: 68%;
+    opacity: 75%;
+}
+#logoDigi{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1650px;
+    left: 62%;
+    opacity: 75%;
+    cursor: default;
+}
+#nombreFagdut{
+    position: absolute;
+    top: 1825px;
+    left: 68%;
+    opacity: 75%;
+}
+#descriFagdut{
+    position: absolute;
+    top: 1875px;
+    left: 68%;
+    opacity: 75%;
+}
+#logoFagdut{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 1845px;
+    left: 61.5%;
+    opacity: 75%;
+}
+
+#habilidades{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    color: white;
+    position: absolute;
+    top: 2100px;
+    left: 40%;
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px black;
+    cursor: default;
+}
+#html{
+    color: white;
+    position: absolute;
+    top: 2250px;
+    left: 40px;
+}
+#relleno{
+    background-color: rgba(255, 255, 255, 0.411);
+    width: 215px;
+    height: 20px;
+    position: absolute;
+    top: 2270px;
+    left: 100px;
+    border-radius: 999px;
+}
+#relleno:hover{
+    animation: html .5s linear 1;
+
+    transition: 0.2s ease;
+    background-color: #1da9fa;
+}
+#borde{
+    border: 2px solid white;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 2268px;
+    left: 98px;
+    border-radius: 999px;
+}
+
+@keyframes html {
+    from{width: 100px;}
+    to{width: 215px;}
+}
+
+#css{
+    color: white;
+    position: absolute;
+    top: 2350px;
+    left: 40px;
+}
+#relleno2 {
+    background-color: rgba(255, 255, 255, 0.411);
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    top: 2370px;
+    left: 100px;
+    border-radius: 999px;
+}
+
+#relleno2:hover {
+    animation: css .5s linear 1;
+
+    transition: 0.2s ease;
+    background-color: #1da9fa;
+}
+
+#borde2 {
+    border: 2px solid white;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 2368px;
+    left: 98px;
+    border-radius: 999px;
+}
+
+@keyframes css {
+    from {
+        width: 100px;
+    }
+
+    to {
+        width: 200px;
+    }
+}
+
+#js {
+    color: white;
+    position: absolute;
+    top: 2450px;
+    left: 35px;
+}
+
+#relleno3 {
+    background-color: rgba(255, 255, 255, 0.411);
+    width: 140px;
+    height: 20px;
+    position: absolute;
+    top: 2470px;
+    left: 100px;
+    border-radius: 999px;
+}
+
+#relleno3:hover {
+    animation: js .5s linear 1;
+
+    transition: 0.2s ease;
+    background-color: #1da9fa;
+}
+
+#borde3 {
+    border: 2px solid white;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 2468px;
+    left: 98px;
+    border-radius: 999px;
+}
+
+@keyframes js {
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 140px;
+    }
+}
+
+#python {
+    color: white;
+    position: absolute;
+    top: 2550px;
+    left: 35px;
+}
+
+#relleno4 {
+    background-color: rgba(255, 255, 255, 0.411);
+    width: 175px;
+    height: 20px;
+    position: absolute;
+    top: 2570px;
+    left: 100px;
+    border-radius: 999px;
+}
+
+#relleno4:hover {
+    animation: python .5s linear 1;
+
+    transition: 0.2s ease;
+    background-color: #1da9fa;
+}
+
+#borde4 {
+    border: 2px solid white;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 2568px;
+    left: 98px;
+    border-radius: 999px;
+}
+
+@keyframes python {
+    from {
+        width: 80px;
+    }
+
+    to {
+        width: 175px;
+    }
+}
+#logoPS{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 2245px;
+    left: 445px;
+}
+#relleno5 {
+    background-color: rgba(255, 255, 255, 0.411);
+    width: 215px;
+    height: 20px;
+    position: absolute;
+    top: 2270px;
+    left: 525px;
+    border-radius: 999px;
+}
+
+#relleno5:hover {
+    animation: ps .5s linear 1;
+
+    transition: 0.2s ease;
+    background-color: #1da9fa;
+}
+
+#borde5 {
+    border: 2px solid white;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 2268px;
+    left: 523px;
+    border-radius: 999px;
+}
+
+@keyframes ps {
+    from {
+        width: 80px;
+    }
+
+    to {
+        width: 215px;
+    }
+}
+#logoPremiere{
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 2345px;
+    left: 445px;
+}
+#relleno6 {
+    background-color: rgba(255, 255, 255, 0.411);
+    width: 185px;
+    height: 20px;
+    position: absolute;
+    top: 2370px;
+    left: 525px;
+    border-radius: 999px;
+}
+
+#relleno6:hover {
+    animation: premiere .5s linear 1;
+
+    transition: 0.2s ease;
+    background-color: #1da9fa;
+}
+
+#borde6 {
+    border: 2px solid white;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 2368px;
+    left: 523px;
+    border-radius: 999px;
+}
+
+@keyframes premiere {
+    from {
+        width: 80px;
+    }
+
+    to {
+        width: 185px;
+    }
+}
+#excel {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 2445px;
+    left: 445px;
+}
+
+#relleno7 {
+    background-color: rgba(255, 255, 255, 0.411);
+    width: 140px;
+    height: 20px;
+    position: absolute;
+    top: 2470px;
+    left: 525px;
+    border-radius: 999px;
+}
+
+#relleno7:hover {
+    animation: excel .5s linear 1;
+
+    transition: 0.2s ease;
+    background-color: #1da9fa;
+}
+
+#borde7 {
+    border: 2px solid white;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 2468px;
+    left: 523px;
+    border-radius: 999px;
+}
+
+@keyframes excel {
+    from {
+        width: 80px;
+    }
+
+    to {
+        width: 140px;
+    }
+}
+#office {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 2545px;
+    left: 445px;
+}
+
+#relleno8 {
+    background-color: rgba(255, 255, 255, 0.411);
+    width: 115px;
+    height: 20px;
+    position: absolute;
+    top: 2570px;
+    left: 525px;
+    border-radius: 999px;
+}
+
+#relleno8:hover {
+    animation: office .5s linear 1;
+
+    transition: 0.2s ease;
+    background-color: #1da9fa;
+}
+
+#borde8 {
+    border: 2px solid white;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 2568px;
+    left: 523px;
+    border-radius: 999px;
+}
+
+@keyframes office {
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 115px;
+    }
+}
+#ingles {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 2245px;
+    left: 850px;
+}
+
+#relleno9 {
+    background-color: rgba(255, 255, 255, 0.411);
+    width: 115px;
+    height: 20px;
+    position: absolute;
+    top: 2270px;
+    left: 925px;
+    border-radius: 999px;
+}
+
+#relleno9:hover {
+    animation: ingles .5s linear 1;
+
+    transition: 0.2s ease;
+    background-color: #1da9fa;
+}
+
+#borde9 {
+    border: 2px solid white;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 2268px;
+    left: 923px;
+    border-radius: 999px;
+}
+
+@keyframes ingles {
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 115px;
+    }
+}
+.letras{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    opacity: 75%;
+    cursor: default;
+}
+#nivel1{
+    position: absolute;
+    top: 2250px;
+    left: 100px;
+    width: 250px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#nivel2 {
+    position: absolute;
+    top: 2350px;
+    left: 100px;
+    width: 250px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#nivel3 {
+    position: absolute;
+    top: 2450px;
+    left: 100px;
+    width: 250px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#nivel4 {
+    position: absolute;
+    top: 2550px;
+    left: 100px;
+    width: 250px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#nivel5 {
+    position: absolute;
+    top: 2250px;
+    left: 525px;
+    width: 250px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#nivel6 {
+    position: absolute;
+    top: 2350px;
+    left: 525px;
+    width: 250px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#nivel7 {
+    position: absolute;
+    top: 2450px;
+    left: 525px;
+    width: 250px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#nivel8 {
+    position: absolute;
+    top: 2550px;
+    left: 525px;
+    width: 250px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#nivel9 {
+    position: absolute;
+    top: 2250px;
+    left: 925px;
+    width: 250px;
+    height: 16px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#info{
+    color: white;
+    position: absolute;
+    top: 2425px;
+    left: 1025px;
+    opacity: 75%;
+    cursor: pointer;
+}
+#info:hover{
+    opacity: 100%;
+    transition: 0.2s ease all;
+}
+.cajainfo {
+    background-color: rgb(47, 47, 48);
+    width: 300px;
+    height: 180px;
+    position: absolute;
+    top: 2400px;
+    left: 900px;
+    box-shadow: 1px 1px 3px black;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    transition: 0.3s ease all;
+    animation: cajaremove .5s linear 1;
+    transform: scale(0.7);
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.cajainfo.visible {
+    visibility: visible;
+    opacity: 1;
+    animation: cajamove .5s linear 1;
+    transform: scale(1);
+}
+#cruzinfo{
+    color: white;
+    opacity: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
-    opacity: 50%;
-    text-shadow: 2px 2px 3px black;
-    box-shadow: 2px 2px 3px black;
-}
-#educacion:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
-}
-
-#skills{
-    font-family: calibri;
-    font-size: 30px;
+    align-items: center;
+    border-radius: 999px;
     position: absolute;
-    left: 830px;
-    top: 90%;
-    background-color: transparent;
-    border: 2px solid white;
+    top: 0px;
+    left: 125px;
+    cursor: pointer;
+}
+#cruzinfo:hover{
+    opacity: 75%;
+    border: 1px solid white;
+    transition: 0.2s ease all;
+}
+#basico{
     color: white;
-    text-decoration: none;
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    opacity: 50%;
-    text-shadow: 2px 2px 3px black;
-    box-shadow: 2px 2px 3px black;
-}
-#skills:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
-}
-
-#archivos{
-    font-family: calibri;
-    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    width: 220px;
     position: absolute;
-    left: 1030px;
-    top: 90%;
-    background-color: transparent;
-    border: 2px solid white;
+    top: 50px;
+    left: 95px;
+    opacity: 75%;
+    cursor: default;
+}
+#intermedio{
     color: white;
-    text-decoration: none;
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    opacity: 50%;
-    text-shadow: 2px 2px 3px black;
-    box-shadow: 2px 2px 3px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    width: 220px;
+    position: absolute;
+    top: 90px;
+    left: 80px;
+    opacity: 75%;
+    cursor: default;
 }
-#archivos:hover{
+#avanzado {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    width: 220px;
+    position: absolute;
+    top: 135px;
+    left: 80px;
+    cursor: default;
+    opacity: 75%;
+}
+#degrade2 {
+    position: absolute;
+    top: 545%;
     opacity: 100%;
-
-    transition: 0.2s all;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom, rgb(47, 47, 48), rgb(1, 48, 117));
 }
-
-#code{
+footer{
+    position: absolute;
+    top: 590.5%;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(1, 48, 117), rgb(46, 116, 223));
+}
+#calle{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    opacity: 60%;
+    cursor: default;
+    text-shadow: 1px 1px 3px black;
+}
+#ciudad{
+    position: absolute;
+    bottom: 75px;
+    left: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    opacity: 60%;
+    cursor: default;
+    text-shadow: 1px 1px 3px black;
+}
+#pais{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    opacity: 60%;
+    cursor: default;
+    text-shadow: 1px 1px 3px black;
+}
+#domicilio{
     color: white;
     position: absolute;
-    top: 89%;
+    bottom: 75px;
+    left: 50px;
+    opacity: 60%;
+    text-shadow: 1px 1px 3px black;
+}
+#fotoFooter{
+    position: absolute;
+    bottom: 0px;
+    left: 33%;
+    width: 250px;
+    height: 290px;
+}
+
+#facebook2 {
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 850px;
+}
+
+#facebook2:hover {
+    animation: redes2 .3s linear 1;
+    color: rgb(3, 63, 153);
+}
+
+#instagram2 {
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 950px;
+}
+
+#instagram2:hover {
+    animation: redes2 .3s linear 1;
+    color: #f0428b;
+}
+
+#twitter2 {
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 1050px;
+}
+
+#twitter2:hover {
+    animation: redes2 .3s linear 1;
+    color: #1da9fa;
+}
+
+#github2 {
+    color: white;
+    position: absolute;
+    top: 175px;
+    left: 1150px;
+}
+
+#github2:hover {
+    animation: redes2 .3s linear 1;
+    color: #0a0025;
+}
+
+#linkedin2 {
+    color: white;
+    position: absolute;
+    top: 175px;
     left: 1250px;
-    opacity: 50%;
-}
-#code:hover{
-    opacity: 100%;
-
-    transition: 0.2s all;
 }
 
-@media (max-width: 393px) and (max-height: 851px) {
-    
-    #FondoMovil{
-        width: 393px;
-        height: 140%;
-        opacity: 100%;
-        position: absolute;
-    }
-    #oscura{
-        position: absolute;
-        width: 393px;
-        height: 140%;
-    }
-    #Fondo{
-        opacity: 0%;
-    }
-
-    #Hola{
-        font-size: 40px;
-        top: 5%;
-    }
-    #nombre{
-        font-size: 40px;
-        top: 10%;
-    }
-    #Hello{
-        font-size: 40px;
-        top: 15%;
-    }
-    #name{
-        font-size: 40px;
-        top: 20%;
-    }
-    #Perfil{
-        top: 20%;
-        left: 10%;
-        width: 250px;
-        height: 340px;
-    }
-    #textemail{
-        font-size: 16px;
-        top: 54%;
-        left: 19%;
-        opacity: 100%;
-    }
-    #email{
-        top: 53.2%;
-        opacity: 100%;
-    }
-    #textnumber{
-        font-size: 16px;
-        top: 59%;
-        left: 19%;
-        opacity: 100%;
-    }
-    #number{
-        top: 58.5%;
-        opacity: 100%;
-    }
-    #facebook{
-        left: 20%;
-        top: 68%;
-        opacity: 100%;
-    }
-    #instagram{
-        left: 50%;
-        top: 68%;
-        opacity: 100%;
-    }
-    #github{
-        left: 35%;
-        top: 75%;
-        opacity: 100%;
-    }
-    #twitter{
-        left: 20%;
-        top: 82%;
-        opacity: 100%;
-    }
-    #linkedin{
-        left: 50%;
-        top: 82%;
-        opacity: 100%;
-    }
-    #proyectos{
-        top: 92%;
-        left: 30px;
-        width: 270px;
-        opacity: 100%;
-    }
-    #sobremi{
-        top: 98%;
-        left: 30px;
-        width: 270px;
-        opacity: 100%;
-    }
-    #laboral{
-        top: 104%;
-        left: 30px;
-        width: 270px;
-        opacity: 100%;
-    }
-    #educacion{
-        top: 110%;
-        left: 30px;
-        width: 270px;
-        opacity: 100%;
-    }
-    #skills{
-        top: 116%;
-        left: 30px;
-        width: 270px;
-        opacity: 100%;
-    }
-    #archivos{
-        top: 122%;
-        left: 30px;
-        width: 270px;
-        opacity: 100%;
-    }
-    #code{
-        top: 128%;
-        left: 34%;
-    }
-
+#linkedin2:hover {
+    animation: redes2 .3s linear 1;
+    color: rgb(3, 63, 153);
 }
 
-@media (max-width: 360px) and (max-height: 640px) {
-
-    #FondoMovil {
-        width: 393px;
-        height: 200%;
-        opacity: 100%;
-        position: absolute;
+@keyframes redes2 {
+    0% {
+        top: 175px;
     }
 
-    #oscura {
-        position: absolute;
-        width: 393px;
-        height: 200%;
+    25% {
+        top: 165px;
     }
 
-    #Fondo {
-        opacity: 0%;
+    50% {
+        top: 160px;
     }
 
-    #Hola {
-        font-size: 40px;
-        top: 5%;
+    75% {
+        top: 165px;
     }
 
-    #nombre {
-        font-size: 40px;
-        top: 10%;
+    100% {
+        top: 175px;
     }
+}
 
-    #Hello {
-        font-size: 40px;
-        top: 16.5%;
-    }
-
-    #name {
-        font-size: 40px;
-        top: 21.5%;
-    }
-
-    #Perfil {
-        top: 20%;
-        left: 7%;
-        width: 325px;
-        height: 435px;
-    }
-
-    #textemail {
-        font-size: 22px;
-        top: 73.5%;
-        left: 19%;
-        opacity: 100%;
-    }
-
-    #email {
-        top: 73.5%;
-        opacity: 100%;
-    }
-
-    #textnumber {
-        font-size: 20px;
-        top: 80%;
-        left: 19%;
-        opacity: 100%;
-    }
-
-    #number {
-        top: 79.5%;
-        opacity: 100%;
-    }
-
-    #facebook {
-        left: 18%;
-        top: 89%;
-        opacity: 100%;
-    }
-
-    #github {
-        left: 70%;
-        top: 89%;
-        opacity: 100%;
-    }
-
-    #instagram {
-        left: 43.5%;
-        top: 97%;
-        opacity: 100%;
-    }
-
-    #twitter {
-        left: 18%;
-        top: 105%;
-        opacity: 100%;
-    }
-
-    #linkedin {
-        left: 70%;
-        top: 105%;
-        opacity: 100%;
-    }
-
-    #proyectos {
-        top: 116%;
-        left: 30px;
-        width: 315px;
-        opacity: 100%;
-    }
-
-    #sobremi {
-        top: 125%;
-        left: 30px;
-        width: 315px;
-        opacity: 100%;
-    }
-
-    #laboral {
-        top: 134%;
-        left: 30px;
-        width: 315px;
-        opacity: 100%;
-    }
-
-    #educacion {
-        top: 143%;
-        left: 30px;
-        width: 315px;
-        opacity: 100%;
-    }
-
-    #skills {
-        top: 152%;
-        left: 30px;
-        width: 315px;
-        opacity: 100%;
-    }
-
-    #archivos {
-        top: 161%;
-        left: 30px;
-        width: 315px;
-        opacity: 100%;
-    }
-
-    #code {
-        top: 170%;
-        left: 44%;
-    }
-
+body::-webkit-scrollbar {
+    width: 6px;
+}
+body::-webkit-scrollbar-track {
+    background: rgba(47, 47, 48, 0.836);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(47, 47, 48);
+    border-radius: 20px;
+    /*border: 3px solid orange;*/
 }
