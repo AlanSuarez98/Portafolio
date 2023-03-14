@@ -1,218 +1,292 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan Suarez</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/983bf74f23.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="Imagenes/Foto2.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
+    <title>Alan | Desarrollador
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/foto-perfil.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header id="inicio">
-        <h1>Alan Suarez</h1>
-        <h2 id="dev">Desarrollador Web</h2>
-        <p id="descri">Soy una persona resolutiva, con gran capacidad para adaptarme a equipos y especializado en programación para web en
-        formato escritorio y responsive. <br><br>
-        
-        Me gusta aprovechar todos los recursos online disponibles con el afán de ser un desarrollador capaz de encontrar
-        soluciones sofisticadas a problemas complejos y/o robustos</p>
-        <img src="Imagenes/Foto.png" alt="Perfil" id="Perfil">
-
-        <a href="https://www.facebook.com/suarez.dev" target="_blank" rel="noopener noreferrer" id="facebook"><i class="fa-brands fa-facebook fa-3x"></i></a>
-        <a href="https://instagram.com/suarez.dev" target="_blank" rel="noopener noreferrer" id="instagram"><i class="fa-brands fa-instagram fa-3x"></i></a>
-        <a href="https://twitter.com/suarez_dev" target="_blank" rel="noopener noreferrer" id="twitter"><i class="fa-brands fa-square-twitter fa-3x"></i></a>
-        <a href="https://github.com/AlanSuarez98" target="_blank" rel="noopener noreferrer" id="github"><i class="fa-brands fa-github fa-3x"></i></a>
-        <a href="https://www.linkedin.com/in/alan--suarez/" target="_blank" rel="noopener noreferrer" id="linkedin"><i class="fa-brands fa-linkedin fa-3x"></i></a>
-
-        <h2 id="email">alansuarez641@hotmail.com</h2>
-        <h2 id="number">(+54) 3416697243</h2>
+    <!-- HEADER -->
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                <img src="./assets/Logo.png" alt="Logo portafolio" width="50" height="50">
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="header__info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li onclick="scrollToSection('about')">Sobre mí</li>
+                    <li onclick="scrollToSection('services')">Servicios</li>
+                    <li onclick="scrollToSection('portfolio')">Portafolio</li>
+                    <li onclick="scrollToSection('contact')">Contacto</li>
+                </ul>
+                <div class="hireMe__button pt-4">
+                    <a href="mailTo:alansuarez641@hotmail.com" aria-label="Enviar mensaje al correo"
+                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <div id="degrade"></div>
-    <main>
+    <!--HOME PAGE -->
+    <div class="container">
+        <section id="home"
+            class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+            <div class="left__content col-12 xl:col-6">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <p>Hola, Yo soy</p>
+                    </div>
+                </div>
+                <h1 class="text-3xl sm:text-5xl md:text-7xl">Mr. Alan Suarez</h1>
+                <p class="text-gray-500">
+                    Profesional en desarrollo web
+                </p>
+                <div class="home__buttons flex align-items-center gap-2 mt-6">
+                    <a href="./assets/CV-Alan-Suarez.pdf" aria-label="Descargar curriculum"
+                        class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
+                    <button onclick="scrollToSection('portfolio')" aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
+                        class="cursor-pointer border-round-lg">Mi trabajo</button>
+                </div>
+            </div>
+            <div class="right__content col-9 sm:col-6 xl:col-5">
+                <img src="./assets/foto-perfil.png" alt="Foto perfil" width="100" height="100">
+            </div>
+        </section>
+        <!--ABOUT ME-->
+        <section id="about" class="about__me w-full min-h-screen flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
+                    <p class="text-gray-500">Con amplio conocimiento en la arquitectura y el desarollo de software web, busco una oportunidad para destacar mis habilidades como programador web y contribuir a soluciones innovadoras. Me entusiasma aprender cosas nuevas e integrar tecnologías modernas para crear productos digitales atractivos que satisfagan las necesidades del usuario. Ofrezco energía positiva al equipo, brindando mi mejor esfuerzo cada día para lograr éxitos personales y colectivos</p>
+                    <div class="knowledge flex flex-column gap-3 mt-5">
+                        <p>HTML 100%</p>
+                        <div class="progress__bar progress__html">
+                            <span></span>
+                        </div>
+                        <p>React JS 75%</p>
+                        <div class="progress__bar progress__ReactJs">
+                            <span></span>
+                        </div>
+                        <p>Python 80%</p>
+                        <div class="progress__bar progress__python">
+                            <span></span>
+                        </div>
+                        <p>Wordpress 70%</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="hireMe__button pt-4">
+                        <a href="mailTo:alansuarez641@hotmail.com" aria-label="Enviar mensaje al correo"
+                            class="cursor-pointer no-underline border-round-lg">Contratame</a>
+                    </div>
 
-        <div id="cajaTrabajos">
-            <a href="Temporales/Cobra Games/CobraGames.html" target="_blank" class="works"><img src="Imagenes/Logo Instagram.jpg" alt="CobraGames" class="works"></a>
-            <a href="https://calculadoradigitalers.netlify.app/" target="_blank" class="works"><img src="Imagenes/Calculadora.jpg" alt="Calculadora" class="works"></a>
-            <a href="https://snakegameonline.netlify.app/" target="_blank" class="works"><img src="Imagenes/SnakeGames.jpg" alt="SnakeGames" class="works"></a>
-        </div>
-        <h2 id="trabajos">Trabajos</h2>
-        <h2 id="works">/ Works</h2>
-        <h2 id="nombreCobra">Cobra Games</h2>
-        <h2 id="sombraCobra">Cobra Games</h2>
-        <p class="descri" id="descri1">E-commerce, venta de videojuegos digitales de <br> Emprendimiento personal  <br><strong>PS4 - PS5 - XBOX - PC</strong></p>
-        <h2 id="sombraCalculadora">Calculadora Online</h2>
-        <h2 id="nombreCalculadora">Calculadora Online</h2>
-        <p class="descri" id="descri2">Calculadora Online <br> TP Integrador del programa Digit@lers creado con <br> <strong>HTML - CSS - JS</strong></p>
-        <h2 id="sombraSnake">Snake Game</h2>
-        <h2 id="nombreSnake">Snake Game</h2>
-        <p class="descri" id="descri3">Snake el juego de la serpiente que ahora puedes jugar desde tu navegador, creado con <br><strong>HTML - CSS - JS</strong></p>
-        
-        <h2 id="laboral">Experiencia Laboral</h2>
-        <h2 class="puntos" id="punto1">o</h2>
-        <h2 class="nombres" id="nombre1">Cobra Games</h2>
-        <p class="descrilaboral" id="laboral1">Venta Digital de Juegos <br>
-            E-commerce Personal - Emprendimiento Personal <br>
-            02 - 2019 / 06 - 2022</p>
-
-        <h2 class="puntos" id="punto2">o</h2>
-        <h2 class="nombres" id="nombre2">LNS Cuadros</h2>
-        <p class="descrilaboral" id="laboral2">Venta de Cuadros Impresos <br>
-            Emprendimiento Familiar <br>
-            06 - 2015 / 11 - 2021</p>
-
-        <h2 class="puntos" id="punto3">o</h2>
-        <h2 class="nombres" id="nombre3">Servicio Tecnico de PC</h2>
-        <p class="descrilaboral" id="laboral3">Reparación de PC y Redes <br>
-            Emprendimiento Personal <br>
-            04 - 2017 / 12 - 2019</p>
-
-        <h2 id="educacion">Educación</h2>
-
-        <img src="Imagenes/Logo UTN.png" alt="UTNlogo" id="logoUTN">
-        <h2 class="nombres" id="nombreUTN">Universidad Tecnologica Nacional (UTN)</h2>
-        <p class="descrilaboral" id="descriUTN">Tecnicatura en Programación <br>
-            2022 - Actualidad</p>
-
-        <img src="Imagenes/Logo eempa.png" alt="LogoEmpa" id="logoEMPA">
-        <h2 class="nombres" id="nombreEMPA">EEMPA Nro 1256</h2>
-        <p class="descrilaboral" id="descriEMPA">Dr Julio Maiztegui <br>
-            2018 - 2018</p>
-
-        <h2 id="cursos">Cursos</h2>
-
-        <a href="Archivos/Certificado Asistencia digit@lers 2022.pdf" download="Certificado_Digitalers_2022" target="_blank"><img src="Imagenes/Logo EducacionIT.png" alt="LogoEducacionIT" id="logoDigi"></a>
-        <h2 class="nombres" id="nombreDigi">Digitalers Python Developer</h2>
-        <p class="descrilaboral" id="descriDigi">Programa Digitalers <br>
-            Telecom Argentina - EducacionIT <br>
-            17 - 05 - 2022 / 20 - 10 - 2022</p>
-
-        <img src="Imagenes/Logo Fagdut.png" alt="LogoFagdut" id="logoFagdut">
-        <h2 class="nombres" id="nombreFagdut">Instituto de Capacitación Fagdut</h2>
-        <p class="descrilaboral" id="descriFagdut">Reparación de PC y Redes <br>
-            04 - 2017 / 09 - 2017</p>
-
-
-        <h2 id="habilidades">Habilidades</h2>
-        <i class="fa-solid fa-circle-info fa-3x" id="info"></i>
-        <i class="fa-brands fa-html5 fa-4x" id="html"></i>
-        <div id="borde"></div>
-        <div id="relleno"></div>
-        <i class="fa-brands fa-css3-alt fa-4x" id="css"></i>
-        <div id="borde2"></div>
-        <div id="relleno2"></div>
-        <i class="fa-brands fa-square-js fa-4x" id="js"></i>
-        <div id="borde3"></div>
-        <div id="relleno3"></div>
-        <i class="fa-brands fa-python fa-4x" id="python"></i>
-        <div id="borde4"></div>
-        <div id="relleno4"></div>
-
-        <img src="Imagenes/iconphotoshop.png" alt="logoPS" id="logoPS">
-        <div id="borde5"></div>
-        <div id="relleno5"></div>
-        <img src="Imagenes/PremiereProicon.png" alt="PremiereLogo" id="logoPremiere">
-        <div id="borde6"></div>
-        <div id="relleno6"></div>
-        <img src="Imagenes/Excelicon.png" alt="logoExcel" id="excel">
-        <div id="borde7"></div>
-        <div id="relleno7"></div>
-        <img src="Imagenes/Officeicon.png" alt="logoOffice" id="office">
-        <div id="borde8"></div>
-        <div id="relleno8"></div>
-        <img src="Imagenes/Inglesicon.png" alt="logoIngles" id="ingles">
-        <div id="borde9"></div>
-        <div id="relleno9"></div>
-        <div id="nivel1">
-            <h2 class="letras">B</h2>
-            <h2 class="letras">I</h2>
-            <h2 class="letras">A</h2>
-        </div>
-        <div id="nivel2">
-            <h2 class="letras">B</h2>
-            <h2 class="letras">I</h2>
-            <h2 class="letras">A</h2>
-        </div>
-        <div id="nivel3">
-            <h2 class="letras">B</h2>
-            <h2 class="letras">I</h2>
-            <h2 class="letras">A</h2>
-        </div>
-        <div id="nivel4">
-            <h2 class="letras">B</h2>
-            <h2 class="letras">I</h2>
-            <h2 class="letras">A</h2>
-        </div>
-        <div id="nivel5">
-            <h2 class="letras">B</h2>
-            <h2 class="letras">I</h2>
-            <h2 class="letras">A</h2>
-        </div>
-        <div id="nivel6">
-            <h2 class="letras">B</h2>
-            <h2 class="letras">I</h2>
-            <h2 class="letras">A</h2>
-        </div>
-        <div id="nivel7">
-            <h2 class="letras">B</h2>
-            <h2 class="letras">I</h2>
-            <h2 class="letras">A</h2>
-        </div>
-        <div id="nivel8">
-            <h2 class="letras">B</h2>
-            <h2 class="letras">I</h2>
-            <h2 class="letras">A</h2>
-        </div>
-        <div id="nivel9">
-            <h2 class="letras">B</h2>
-            <h2 class="letras">I</h2>
-            <h2 class="letras">A</h2>
-        </div>
-
-        <div class="cajainfo" id="cajainfo">
-            <i class="fa-solid fa-xmark fa-2x" id="cruzinfo"></i>
-            <h2 id="basico">B = Basico</h2>
-            <h2 id="intermedio">I = Intermedio</h2>
-            <h2 id="avanzado">A = Avanzado</h2>
-
-        </div>
-
-    </main>
-    <div id="degrade2"></div>
-    <footer>
-        <i class="fa-solid fa-location-dot fa-2x" id="domicilio"></i>
-        <h2 id="pais">Argentina</h2>
-        <h2 id="ciudad">Rosario, Santa Fe</h2>
-        <h2 id="calle">Pasaje de Gales 2977</h2>
-
-
-        <img src="Imagenes/Foto.png" alt="PerfilFooter" id="fotoFooter">
-
-        <a href="https://www.facebook.com/suarez.dev" target="_blank" rel="noopener noreferrer" id="facebook2"><i
-                class="fa-brands fa-facebook fa-3x"></i></a>
-        <a href="https://instagram.com/suarez.dev" target="_blank" rel="noopener noreferrer" id="instagram2"><i
-                class="fa-brands fa-instagram fa-3x"></i></a>
-        <a href="https://twitter.com/suarez_dev" target="_blank" rel="noopener noreferrer" id="twitter2"><i
-                class="fa-brands fa-square-twitter fa-3x"></i></a>
-        <a href="https://github.com/AlanSuarez98" target="_blank" rel="noopener noreferrer" id="github2"><i
-                class="fa-brands fa-github fa-3x"></i></a>
-        <a href="https://www.linkedin.com/in/alan--suarez/" target="_blank" rel="noopener noreferrer" id="linkedin2"><i
-                class="fa-brands fa-linkedin fa-3x"></i></a>
-    </footer>
-
-    <i class="fa-solid fa-bars fa-3x" id="bars"></i>
-    
-    <div class="caja" id="caja">
-        <i class="fa-solid fa-xmark fa-3x" id="cruz"></i>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#trabajos">Trabajos</a></li>
-            <li><a href="#laboral">Experiencia Laboral</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-        </ul>
+                </div>
+                <div class="image col p-0 mt-6 md:mt-0">
+                    <img src="./assets/freelancer.jpg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="main.js"></script>
+    <!--FREE LANCER SECTION -->
+    <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
+        <p class="text-sm">Tienes un proyecto en mente?</p>
+        <h1 class="text-center">Estoy disponible como freelancer</h1>
+        <div class="hireMe__button pt-4">
+            <a href="mailTo:alansuarez641@hotmail.com" aria-label="Enviar mensaje al correo"
+                class="cursor-pointer no-underline border-round-lg">Escríbeme</a>
+        </div>
+    </section>
+    <!--SERVICES -->
+    <div class="container">
+        <section id="services" class="services min-h-full w-full pb-7">
+            <div class="services__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mis servicios</h1>
+            </div>
+            <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
+                <div class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-wordpress"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Wordpress</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Python</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>React Js</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Diseñador UX/UI</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Desarrollo web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--PORTFOLIO -->
+        <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+            <div class="portfolio__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
+            </div>
+            <div class="portfolio__gallery">
+                <div class="gallery__categories mb-5 mt-5">
+                    <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                        <li class="filter-item active" data-filter="all">Todos</li>
+                        <li class="filter-item " data-filter="e__commerce">E-commerce</li>
+                        <li class="filter-item " data-filter="otros">Otros</li>
+                    </ul>
+                </div>
+                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                    <div class="project__card e__commerce">
+                        <img src="./assets/proyecto-1.jpg" alt="LogoCobraGames">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Cobra Games</h2>
+                            <p>Tienda digital de ventas de videjuegos de consolas <br> (En Progreso)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__card otros">
+                        <img src="./assets/proyecto-2.jpg" alt="CalculadoraDigital">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Calculadora digital</h2>
+                            <p>Calculadora digital en HTML - CSS - JS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__card otros">
+                        <img src="./assets/proyecto-3.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>SnakeGames</h2>
+                            <p>Juego de la serpiente, creado con HTML - CSS - JS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER -->
+        <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
+            <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
+                <h3>Redes sociales</h3>
+                <p>Auténtico e innovador</p>
+                <p>Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento</p>
+                <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
+                    <a href="https://www.facebook.com/alansuarez1998" target="_blank" aria-label="Ir a facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/alan_suarez98" target="_blank" aria-label="Ir a instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alan--suarez" target="_blank" aria-label="Ir a linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
+                <h3>Contacto</h3>
+                <div class="phone__number flex align-items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+549 3416697243</p>
+                </div>
+                <div class="email flex align-items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>alansuarez641@hotmail.com</p>
+                </div>
+                <a href="mailTo:alansuarez641@hotmail.com"
+                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
+                    <span>
+                        <i class="fa-solid fa-message"></i>
+                    </span>Escríbeme
+                </a>
+            </div>
+            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-around">
+                <h3>Mis Servicios</h3>
+                <p>Desarrollo web</p>
+                <p>Diseñador UI /UX</p>
+            </div>
+        </footer>
+    </div>
+
 </body>
+<script>
+    const filterContainer = document.querySelector(".gallery__categories");
+    const galleryItems = document.querySelectorAll(".project__card");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            filterContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active")
+            const filterValue = event.target.getAttribute("data-filter")
+            galleryItems.forEach(item => {
+                if (item.classList.contains(filterValue) || filterValue === "all") {
+                    item.classList.remove("hide")
+                    item.classList.add("show")
+                } else {
+                    item.classList.remove("show")
+                    item.classList.add("hide")
+                }
+            })
+        }
+    })
+
+    function scrollToSection(sectionId){
+        document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+    }
+</script>
+
 </html>
