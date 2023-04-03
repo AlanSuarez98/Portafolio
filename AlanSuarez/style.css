@@ -57,12 +57,6 @@ body::-webkit-scrollbar-track {
     position: relative;
 }
 
-.logo img {
-    width: 120px;
-    height: auto;
-    margin-top: 1rem;
-}
-
 .header__info ul li {
     padding: 2.5rem 1.2rem 1rem 1.2rem;
     cursor: pointer;
@@ -286,7 +280,7 @@ body::-webkit-scrollbar-track {
 }
 .progress__wordpress span {
     background-color: #0864df;
-    width: 70%;
+    width: 60%;
 }
 
 /* ------- FREE LANCER -------- */
