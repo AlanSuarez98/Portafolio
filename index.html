@@ -1,346 +1,401 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
-    <title>Alan | Desarrollador
-    </title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/foto-perfil.png">
-    <script src="https://kit.fontawesome.com/983bf74f23.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
-    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Alan | Desarrolladores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/hero2.png">
 </head>
-
 <body>
-    <!-- HEADER -->
-    <header class="flex w-full fixed top-0 z-1">
-        <nav class="flex justify-content-between w-full navbar">
-            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
-                class="checkbox xl:hidden">
-            <div class="hamburger__lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Alan</a>
             </div>
-            <div class="header__info flex align-items-center gap-3">
-                <ul class="flex flex-column xl:flex-row list-none">
-                    <li onclick="scrollToSection('about')">Sobre mí</li>
-                    <li onclick="scrollToSection('services')">Tecnologías</li>
-                    <li onclick="scrollToSection('portfolio')">Portafolio</li>
-                    <li onclick="scrollToSection('contact')">Contacto</li>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
-                <div class="hireMe__button pt-4">
-                    <a href="mailTo:alansuarez641@hotmail.com" aria-label="Enviar mensaje al correo"
-                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
-                </div>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
             </div>
-        </nav>
-    </header>
-    <!--HOME PAGE -->
-    <div class="container">
-        <section id="home"
-            class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
-            <div class="left__content col-12 xl:col-6">
-                <div class="message__bubble triangle mb-4 md:mb-2">
-                    <div class="message__text p-2 sm:p-3 text-center">
-                        <p>Hola, Yo soy</p>
-                    </div>
-                </div>
-                <h1 class="text-3xl sm:text-5xl md:text-7xl">Mr. Alan Suarez</h1>
-                <p class="text-gray-500">
-                    Desarrollador Web
-                </p>
-                <div class="home__buttons flex align-items-center gap-2 mt-6">
-                    <a href="./assets/CV-Alan-Suarez.pdf" aria-label="Descargar curriculum"
-                        class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
-                    <button onclick="scrollToSection('portfolio')"
-                        aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
-                        class="cursor-pointer border-round-lg">Mi trabajo</button>
-                </div>
-            </div>
-            <div class="right__content col-9 sm:col-6 xl:col-5">
-                <img src="./assets/foto-perfil.png" alt="Foto perfil" width="100" height="100">
-            </div>
-        </section>
-        <!--ABOUT ME-->
-        <section id="about" class="about__me w-full min-h-screen flex align-items-center">
-            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
-                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
-                    <h1 class="text-3xl md:text-5xl">Sobre mí</h1>
-                    <p class="text-gray-500">Soy un programador web recién graduado en busca de oportunidades para desarrollar mi carrera profesional en el área de la tecnología. Me considero una persona proactiva, con habilidades para trabajar en equipo y aprender de forma constante. Durante mi formación académica, adquirí conocimientos en lenguajes de programación como HTML, CSS y JavaScript, entre otros, y he participado en proyectos de desarrollo web para empresas locales. Mi objetivo como trainee es poner en práctica mis habilidades y conocimientos para crecer en el área de la programación y aportar valor a la empresa que me brinde la oportunidad de formar parte de su equipo.</p>
-                    <div class="knowledge flex flex-column gap-3 mt-5">
-                        <p>HTML 100%</p>
-                        <div class="progress__bar progress__html">
-                            <span></span>
-                        </div>
-                        <p>React JS 75%</p>
-                        <div class="progress__bar progress__ReactJs">
-                            <span></span>
-                        </div>
-                        <p>Python 80%</p>
-                        <div class="progress__bar progress__python">
-                            <span></span>
-                        </div>
-                        <p>Wordpress 60%</p>
-                        <div class="progress__bar progress__wordpress">
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="hireMe__button pt-4">
-                        <a href="mailTo:alansuarez641@hotmail.com" aria-label="Enviar mensaje al correo"
-                            class="cursor-pointer no-underline border-round-lg">Contratame</a>
-                    </div>
-
-                </div>
-                <div class="image col p-0 mt-6 md:mt-0">
-                    <img src="./assets/freelancer.jpg" alt="Foto relacionado a acerca de mí" width="100" height="100">
-                </div>
-            </div>
-        </section>
+        </header>
     </div>
-    <!--FREE LANCER SECTION -->
-    <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
-        <p class="text-sm">Tienes un proyecto en mente?</p>
-        <h1 class="text-center">Estoy disponible como freelancer</h1>
-        <div class="hireMe__button pt-4">
-            <a href="mailTo:alansuarez641@hotmail.com" aria-label="Enviar mensaje al correo"
-                class="cursor-pointer no-underline border-round-lg">Escríbeme</a>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero2.png" alt="">
+            </div>
+            <h1>ALAN SUAREZ</h1>
+            <h2>Programador Web</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/alansuarez1998"><i class="fa-brands fa-facebook-f" target="_blank"></i></a>
+                <a href="https://instagram.com/alan_suarez98" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/AlanSuarez98"><i class="fa-brands fa-github" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/alan--suarez/"><i class="fa-brands fa-linkedin-in" target="_blank"></i></a>
+            </div>
         </div>
     </section>
-    <!--SERVICES -->
-    <div class="container">
-        <section id="services" class="services min-h-full w-full pb-7">
-            <div class="services__title flex flex-column gap-3 text-center">
-                <h1 class="text-3xl md:text-5xl">Tecnologías</h1>
-            </div>
-            <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
-                <div class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center">
-                        <i class="fa-brands fa-html5"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>HTML</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-wordpress"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Wordpress</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-python"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Python</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-react"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>React Js</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Diseñador UX/UI</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Desarrollo web</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>CSS</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-git-alt"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>GIT</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-php"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>PHP</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-bootstrap"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Bootstrap</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-brands fa-d"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Django</p>
-                    </div>
-                </div>
-                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
-                    <div class="service__logo flex align-items-center justify-content-center ">
-                        <i class="fa-solid fa-compass-drafting"></i>
-                    </div>
-                    <div class="service__name">
-                        <p>Photoshop</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!--PORTFOLIO -->
-        <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
-            <div class="portfolio__title flex flex-column gap-3 text-center">
-                <h1 class="text-3xl md:text-5xl">Mi trabajo</h1>
-            </div>
-            <div class="portfolio__gallery">
-                <div class="gallery__categories mb-5 mt-5">
-                    <ul class="flex list-none flex-wrap justify-content-center gap-3">
-                        <li class="filter-item active" data-filter="all">Todos</li>
-                        <li class="filter-item " data-filter="e__commerce">E-commerce</li>
-                        <li class="filter-item " data-filter="otros">Otros</li>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Alan Suarez.</span> Soy un programador web recién graduado en busca de oportunidades para desarrollar mi carrera profesional en el área de la tecnología. Me considero una persona proactiva, con habilidades para trabajar en equipo y aprender de forma constante. Durante mi formación académica, adquirí conocimientos en lenguajes de programación como HTML, CSS y JavaScript, entre otros, y he participado en proyectos de desarrollo web para empresas locales. Mi objetivo como trainee es poner en práctica mis habilidades y conocimientos para crecer en el área de la programación y aportar valor a la empresa que me brinde la oportunidad de formar parte de su equipo.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            07-09-1998
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 3416697243
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            alansuarez641@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Rosario Santa Fe, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
                     </ul>
                 </div>
-                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
-                    <div class="project__card e__commerce">
-                        <img src="./assets/proyecto-1.jpg" alt="LogoCobraGames">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Cobra Games</h2>
-                            <p>Tienda digital de ventas de videjuegos de consolas <br> (En Progreso)
-                            </p>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>TECH</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-hashtag"></i>
+                            <span>REDES</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button onclick="descargarArchivo()">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="project__card otros">
-                        <img src="./assets/proyecto-2.jpg" alt="CalculadoraDigital">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>Calculadora digital</h2>
-                            <p>Calculadora digital en HTML - CSS - JS
-                            </p>
-                            <a href="https://calculadoradigitalers.netlify.app" target="_blank" class="demo">Ver Demo</a>
-                            <a href="https://github.com/AlanSuarez98/Calculadora-Digitalers" target="_blank" class="repo">Repositorio</a>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="project__card otros">
-                        <img src="./assets/proyecto-3.jpg" alt="">
-                        <div class="overlay"></div>
-                        <div
-                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                            <h2>SnakeGames</h2>
-                            <p>Juego de la serpiente, creado con HTML - CSS - JS
-                            </p>
-                            <a href="https://snakegameonline.netlify.app" target="_blank" class="demo">Ver Demo</a>
-                            <a href="https://github.com/AlanSuarez98/SnakeGame" target="_blank" class="repo">Repositorio</a>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--FOOTER -->
-        <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
-            <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
-                <h3>Redes sociales</h3>
-                <p>Auténtico e innovador</p>
-                <p>Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento</p>
-                <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
-                    <a href="https://www.facebook.com/alansuarez1998" target="_blank" aria-label="Ir a facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/alan_suarez98" target="_blank" aria-label="Ir a instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/alan--suarez" target="_blank" aria-label="Ir a linkedin">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnicatura en Programación</h4>
+                        <span class="casa">Universidad Tecnologica Nacional</span>
+                        <span class="fecha">2022 - Cursando</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller</h4>
+                        <span class="casa">EEMPA Dr Julio Maiztegui</span>
+                        <span class="fecha">2018 - 2021</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnico Mecanico Automotor</h4>
+                        <span class="casa">EET Dr Osvaldo Magnasco</span>
+                        <span class="fecha">2013 - 2017</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Programación Python</h4>
+                        <span class="casa">EducacionIT - Digitalers Telecom Ar</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>e-Commerce</h4>
+                        <span class="casa">Cobra Games</span>
+                        <span class="fecha">2020 - Actual</span>
+                        <p>Emprendimiento Personal de ventas de videojuegos digitales de consolas</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>e-Commerce</h4>
+                        <span class="casa">LNS Cuadros</span>
+                        <span class="fecha">2018 - 2021</span>
+                        <p>Emprendimiento familiar de ventas de cuadros tripricos a medidas y personalizados</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div
-                class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
-                <h3>Contacto</h3>
-                <div class="phone__number flex align-items-center gap-2">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+549 3416697243</p>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Proyecto1.jpg" alt="P-ToDo List">
+                    <div class="overlay">
+                        <h3>Tareas Pendientes</h3>
+                        <p>Projecto en To Do List</p>
+                    </div>
                 </div>
-                <div class="email flex align-items-center gap-2">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>alansuarez641@hotmail.com</p>
+                <div class="proyecto">
+                    <img src="img/proyecto-2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Calculadora Web</h3>
+                        <p>Projecto calculadora web</p>
+                    </div>
                 </div>
-                <a href="mailTo:alansuarez641@hotmail.com"
-                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
-                    <span>
-                        <i class="fa-solid fa-message"></i>
-                    </span>Escríbeme
-                </a>
+                <div class="proyecto">
+                    <img src="img/proyecto-3.jpg" alt="SnakeGames Web">
+                    <div class="overlay">
+                        <h3>Snake Games</h3>
+                        <p>Juego de la serpiente</p>
+                    </div>
+                </div>
+                <!--<div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>-->
             </div>
-            <div
-                class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-around">
-                <h3>Mis Servicios</h3>
-                <p>Desarrollo web</p>
-                <p>Diseñador UI /UX</p>
-                <p>Wordpress</p>
-                <p>Photoshop</p>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form action="form.php" method="POST" class="col" name="contact" data-netlify="true">
+                    <input type="text" placeholder="Tú Nombre" name="nombre">
+                    <input type="text" placeholder="Número telefónico" name="telefono">
+                    <input type="text" placeholder="Dirección de correo" name="correo">
+                    <input type="text" placeholder="Tema" name="tema">
+                    <textarea name="mensaje" id="textarea" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+                    <!-- Mapa -->
+                    <div class="col">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Rosario, Santa Fe</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    <p>(+54)-3416697243</p>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p>alansuarez641@hotmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
             </div>
-        </footer>
-    </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/alansuarez1998"><i class="fa-brands fa-facebook-f" target="_blank"></i></a>
+            <a href="https://instagram.com/alan_suarez98" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/AlanSuarez98"><i class="fa-brands fa-github" target="_blank"></i></a>
+            <a href="https://www.linkedin.com/in/alan--suarez/"><i class="fa-brands fa-linkedin-in" target="_blank"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
 
 </body>
-<script>
-    const filterContainer = document.querySelector(".gallery__categories");
-    const galleryItems = document.querySelectorAll(".project__card");
-
-    filterContainer.addEventListener("click", (event) => {
-        if (event.target.classList.contains("filter-item")) {
-            filterContainer.querySelector(".active").classList.remove("active");
-            event.target.classList.add("active")
-            const filterValue = event.target.getAttribute("data-filter")
-            galleryItems.forEach(item => {
-                if (item.classList.contains(filterValue) || filterValue === "all") {
-                    item.classList.remove("hide")
-                    item.classList.add("show")
-                } else {
-                    item.classList.remove("show")
-                    item.classList.add("hide")
-                }
-            })
-        }
-    })
-
-    function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" })
-    }
-</script>
-
 </html>
