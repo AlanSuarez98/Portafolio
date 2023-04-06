@@ -19,9 +19,6 @@ html{
     left: 0;
     z-index: 99;
 }
-#textarea{
-    resize: none;
-}
 .contenedor-header header{
     max-width: 1100px;
     margin: auto;
@@ -551,6 +548,9 @@ html{
     color: #fff;
     font-size: 18px;
 }
+#textarea{
+    resize: none;
+}
 .contacto button{
     cursor: pointer;
     background-color: transparent;
@@ -585,7 +585,7 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -700,10 +700,17 @@ footer .arriba{
     .portfolio .galeria .proyecto img{
         width: 100%;
     }
+    .contacto{
+        padding: 400px 0;
+    }
     .contacto .fila{
         display: block;
     }
     .contacto .fila .col{
         width: 100%;
     }
+    .info{
+        margin-top: 175px;
+    }
+    
 }
