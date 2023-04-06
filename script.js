@@ -61,7 +61,11 @@ function descargarArchivo() {
     document.body.removeChild(link);
 }
 
-  
+var boton = document.getElementById('enviar');
+
+function mensaje(){
+    alert("¡Enviado correctamente!");
+}
   
   
   

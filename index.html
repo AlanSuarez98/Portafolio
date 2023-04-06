@@ -352,10 +352,13 @@
                     <input type="text" placeholder="Dirección de correo" name="email">
                     <input type="text" placeholder="Tema" name="tema">
                     <textarea name="mensage" id="textarea" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button type="submit">
+                    <button type="submit" onclick="mensaje()" id="enviar">
                         Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
+                    <input type="hidden" name="_next" value="index.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    
                 </form>
                     <!-- Mapa -->
                     <div class="col">
