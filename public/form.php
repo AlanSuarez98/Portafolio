@@ -1,4 +1,6 @@
 <?php
+include PHPMailer\PHPMailer\PHPMailer;
+include PHPMailer\PHPMailer\Exception;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
