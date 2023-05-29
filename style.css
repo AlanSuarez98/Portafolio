@@ -155,6 +155,11 @@ html{
     color: #00b3fa;
     width: 130px;
 }
+#date{
+    opacity: 15%;
+
+    background-color: transparent;
+}
 .sobremi .fila .col ul li span{
     background-color: #00b3fa;
     padding: 3px;
