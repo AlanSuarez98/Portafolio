@@ -1,0 +1,2557 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+@media (min-width: 0px) and (max-width: 320px){
+    nav{
+        width: 100vw;
+        height: 50px;
+        background-color: #313131b2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    nav h1{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 35px;
+        margin-left: 45px;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.500);
+    }
+    #btnBars{
+        background-color: transparent;
+        border: none;
+        width: 26px;
+        margin: 0 25px 0 0;
+    }
+    #contenedor1{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: fixed;
+        background-color: #313131b2;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        z-index: 11;
+        top: 50px;
+        right: 0px;
+        visibility: hidden;
+        overflow: hidden;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    #contendor1 ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #contenedor1 ul li{
+        list-style-type: none;
+        padding: 5px 5%;
+    }
+    #contenedor1 ul li a{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+    }
+    #contenedor2 a{
+        color: white;
+    }
+
+    #menuBars{
+        color: white;
+        margin-right: 15px;
+        font-size: 26px;
+    }
+
+    header{
+        width: 100%;
+        height: 488px;
+        overflow: hidden;
+        background-color: black;
+    }
+    #fondoHead{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.5px);
+    }
+    #oscurecer{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        background-color: black;
+        opacity: 40%;
+    }
+    #cajaHead{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #welcome{
+        color: white;
+        font-family: Calibri;
+        font-weight: lighter;
+        opacity: 75%;
+        padding: 0 0 40px 0;
+    }
+    #titulo{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+        font-size: 28px;
+        padding: 0px 0 40px;
+    }
+    #titulo span{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 35px;
+    }
+    #cajaHead p{
+        color: white;
+        font-family: Calibri;
+        font-size: 20px;
+        opacity: 75%;
+        padding: 0 0 40px 0;
+    }
+    #cajaHead button{
+        padding: 25px 40px;
+        border-radius: 99px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #cajaHead button:hover{
+        background-color: brown;
+        transition: 0.3s ease-in-out;
+    }
+    main{
+        width: 100%;
+        height: 4550px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleServicios{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 50px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #servicios{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        max-width: 1000px;
+        gap: 10px;
+        position: relative;
+        top: 70px;
+        gap: 20px;
+    }
+    .cajaServicios{
+        width: 275px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaServicios:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .iconServicios{
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 99px;
+    }
+    .cajaServicios h2{
+        font-family: Calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .divisorServ{
+        width: 75px;
+        height: 1px;
+        margin: 35px;
+        background-color: black;
+        opacity: 50%;
+    }
+    .cajaServicios p{
+        color: black;
+        font-family: calibri;
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+    }
+    #titleProyectos{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #proyectos{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        max-width: 1000px;
+        justify-content: center;
+        gap: 25px;
+        position: relative;
+        top: 200px;
+    }
+    .cajaProyectos{
+        width: 275px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaProyectos:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos img{
+        width: 50px;
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        box-sizing: initial;
+        margin: 20px;
+        border-radius: 99px;
+        filter: grayscale(100%);
+    }
+    .cajaProyectos h2{
+        font-family: calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .cajaProyectos p{
+        font-family: calibri;
+        font-size: 16px;
+        margin: 25px;
+        width: 250px;
+        text-align: center;
+    }
+    .cajaProyectos button{
+        padding: 15px 30px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: rgb(228, 228, 228);
+        font-family: calibri;
+        font-size: 18px;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #btnProyectos{
+        position: relative;
+        width: 100%;
+        height: 65px;
+        top: 225px;
+        display: flex;
+        justify-content: center;
+    }
+    #masProyectos{
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #titleContacto{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 300px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #contacto{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        top: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #namemail{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        padding: 10px;
+        width: 95%;
+        border-radius: 10px;
+        margin: 0 0 10px 0;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #email_id{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 95%;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #from_tema{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 95%;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #message{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 95%;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        resize: none;
+    }
+    #btnMessage{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    #enviarMSG{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover .iconEnviar{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        background-image: url("https://user-images.githubusercontent.com/66705822/100891556-211aa600-3498-11eb-84d7-7e9d43c8331c.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #oscurecer2{
+        background-color: black;
+        opacity: 40%;
+        width: 100%;
+        height: 100%;
+    }
+    #derecho{
+        width: 100%;
+        position: relative;
+        top: -60px;
+        display: flex;
+        justify-content: center;
+    }
+    #derecho h3{
+        color: white;
+        font-family: calibri;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px){
+    nav{
+        width: 100vw;
+        height: 50px;
+        background-color: #313131b2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    nav h1{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 35px;
+        margin-left: 45px;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.500);
+    }
+    #btnBars{
+        background-color: transparent;
+        border: none;
+        width: 26px;
+        margin: 0 25px 0 0;
+    }
+    #contenedor1{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: fixed;
+        background-color: #313131b2;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        z-index: 11;
+        top: 50px;
+        right: 0px;
+        visibility: hidden;
+        overflow: hidden;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    #contendor1 ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #contenedor1 ul li{
+        list-style-type: none;
+        padding: 5px 5%;
+    }
+    #contenedor1 ul li a{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+    }
+    #contenedor2 a{
+        color: white;
+    }
+
+    #menuBars{
+        color: white;
+        margin-right: 15px;
+        font-size: 26px;
+    }
+
+    header{
+        width: 100%;
+        height: 488px;
+        overflow: hidden;
+        background-color: black;
+    }
+    #fondoHead{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.5px);
+    }
+    #oscurecer{
+        width: 100%;
+        height: 488px;
+        position: absolute;
+        top: 0px;
+        background-color: black;
+        opacity: 40%;
+    }
+    #cajaHead{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #welcome{
+        color: white;
+        font-family: Calibri;
+        font-weight: lighter;
+        opacity: 75%;
+        padding: 0 0 40px 0;
+    }
+    #titulo{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+        font-size: 28px;
+        padding: 0px 0 40px;
+    }
+    #titulo span{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 35px;
+    }
+    #cajaHead p{
+        color: white;
+        font-family: Calibri;
+        font-size: 20px;
+        opacity: 75%;
+        padding: 0 0 40px 0;
+    }
+    #cajaHead button{
+        padding: 25px 40px;
+        border-radius: 99px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #cajaHead button:hover{
+        background-color: brown;
+        transition: 0.3s ease-in-out;
+    }
+    main{
+        width: 100%;
+        height: 4550px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleServicios{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 50px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #servicios{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        max-width: 1000px;
+        gap: 10px;
+        position: relative;
+        top: 70px;
+        gap: 20px;
+    }
+    .cajaServicios{
+        width: 275px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaServicios:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .iconServicios{
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 99px;
+    }
+    .cajaServicios h2{
+        font-family: Calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .divisorServ{
+        width: 75px;
+        height: 1px;
+        margin: 35px;
+        background-color: black;
+        opacity: 50%;
+    }
+    .cajaServicios p{
+        color: black;
+        font-family: calibri;
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+    }
+    #titleProyectos{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #proyectos{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        max-width: 1000px;
+        justify-content: center;
+        gap: 25px;
+        position: relative;
+        top: 200px;
+    }
+    .cajaProyectos{
+        width: 275px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaProyectos:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos img{
+        width: 50px;
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        box-sizing: initial;
+        margin: 20px;
+        border-radius: 99px;
+        filter: grayscale(100%);
+    }
+    .cajaProyectos h2{
+        font-family: calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .cajaProyectos p{
+        font-family: calibri;
+        font-size: 16px;
+        margin: 25px;
+        width: 250px;
+        text-align: center;
+    }
+    .cajaProyectos button{
+        padding: 15px 30px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: rgb(228, 228, 228);
+        font-family: calibri;
+        font-size: 18px;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #btnProyectos{
+        position: relative;
+        width: 100%;
+        height: 65px;
+        top: 225px;
+        display: flex;
+        justify-content: center;
+    }
+    #masProyectos{
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #titleContacto{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 300px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #contacto{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        top: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #namemail{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        padding: 10px;
+        width: 325px;
+        border-radius: 10px;
+        margin: 0 0 10px 0;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #email_id{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 325px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #from_tema{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 325px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #message{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 325px;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        resize: none;
+    }
+    #btnMessage{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    #enviarMSG{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover .iconEnviar{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        background-image: url("https://user-images.githubusercontent.com/66705822/100891556-211aa600-3498-11eb-84d7-7e9d43c8331c.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #oscurecer2{
+        background-color: black;
+        opacity: 40%;
+        width: 100%;
+        height: 100%;
+    }
+    #derecho{
+        width: 100%;
+        position: relative;
+        top: -60px;
+        display: flex;
+        justify-content: center;
+    }
+    #derecho h3{
+        color: white;
+        font-family: calibri;
+    }
+}
+
+
+@media (min-width: 376px) and (max-width: 425px){
+    nav{
+        width: 100vw;
+        height: 50px;
+        background-color: #313131b2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    nav h1{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 35px;
+        margin-left: 45px;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.500);
+    }
+    #btnBars{
+        background-color: transparent;
+        border: none;
+        width: 26px;
+        margin: 0 25px 0 0;
+    }
+    #contenedor1{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: fixed;
+        background-color: #313131b2;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        z-index: 11;
+        top: 50px;
+        right: 0px;
+        visibility: hidden;
+        overflow: hidden;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    #contendor1 ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #contenedor1 ul li{
+        list-style-type: none;
+        padding: 5px 5%;
+    }
+    #contenedor1 ul li a{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+    }
+    #contenedor2 a{
+        color: white;
+    }
+
+    #menuBars{
+        color: white;
+        margin-right: 15px;
+        font-size: 26px;
+    }
+
+    header{
+        width: 100%;
+        height: 488px;
+        overflow: hidden;
+        background-color: black;
+    }
+    #fondoHead{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.5px);
+    }
+    #oscurecer{
+        width: 100%;
+        height: 488px;
+        position: absolute;
+        top: 0px;
+        background-color: black;
+        opacity: 40%;
+    }
+    #cajaHead{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #welcome{
+        color: white;
+        font-family: Calibri;
+        font-weight: lighter;
+        opacity: 75%;
+        padding: 0 0 40px 0;
+    }
+    #titulo{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+        font-size: 28px;
+        padding: 0px 0 40px;
+    }
+    #titulo span{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 35px;
+    }
+    #cajaHead p{
+        color: white;
+        font-family: Calibri;
+        font-size: 20px;
+        opacity: 75%;
+        padding: 0 0 40px 0;
+    }
+    #cajaHead button{
+        padding: 25px 40px;
+        border-radius: 99px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #cajaHead button:hover{
+        background-color: brown;
+        transition: 0.3s ease-in-out;
+    }
+    main{
+        width: 100%;
+        height: 4550px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleServicios{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 50px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #servicios{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        max-width: 1000px;
+        gap: 10px;
+        position: relative;
+        top: 70px;
+        gap: 20px;
+    }
+    .cajaServicios{
+        width: 275px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaServicios:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .iconServicios{
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 99px;
+    }
+    .cajaServicios h2{
+        font-family: Calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .divisorServ{
+        width: 75px;
+        height: 1px;
+        margin: 35px;
+        background-color: black;
+        opacity: 50%;
+    }
+    .cajaServicios p{
+        color: black;
+        font-family: calibri;
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+    }
+    #titleProyectos{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #proyectos{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        max-width: 1000px;
+        justify-content: center;
+        gap: 25px;
+        position: relative;
+        top: 200px;
+    }
+    .cajaProyectos{
+        width: 275px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaProyectos:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos img{
+        width: 50px;
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        box-sizing: initial;
+        margin: 20px;
+        border-radius: 99px;
+        filter: grayscale(100%);
+    }
+    .cajaProyectos h2{
+        font-family: calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .cajaProyectos p{
+        font-family: calibri;
+        font-size: 16px;
+        margin: 25px;
+        width: 250px;
+        text-align: center;
+    }
+    .cajaProyectos button{
+        padding: 15px 30px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: rgb(228, 228, 228);
+        font-family: calibri;
+        font-size: 18px;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #btnProyectos{
+        position: relative;
+        width: 100%;
+        height: 65px;
+        top: 225px;
+        display: flex;
+        justify-content: center;
+    }
+    #masProyectos{
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #titleContacto{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 300px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #contacto{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        top: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #namemail{
+        display: flex;
+        flex-direction: column;
+    }
+    #from_name{
+        padding: 10px;
+        width: 325px;
+        border-radius: 10px;
+        margin: 0 0 10px 0;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #email_id{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 325px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #from_tema{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 325px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #message{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 325px;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        resize: none;
+    }
+    #btnMessage{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    #enviarMSG{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover .iconEnviar{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        background-image: url("https://user-images.githubusercontent.com/66705822/100891556-211aa600-3498-11eb-84d7-7e9d43c8331c.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #oscurecer2{
+        background-color: black;
+        opacity: 40%;
+        width: 100%;
+        height: 100%;
+    }
+    #derecho{
+        width: 100%;
+        position: relative;
+        top: -60px;
+        display: flex;
+        justify-content: center;
+    }
+    #derecho h3{
+        color: white;
+        font-family: calibri;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    nav{
+        width: 100vw;
+        height: 50px;
+        background-color: #313131b2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    nav h1{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 35px;
+        margin-left: 45px;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.500);
+    }
+    #btnBars{
+        background-color: transparent;
+        border: none;
+        width: 26px;
+        margin: 0 25px 0 0;
+    }
+    #contenedor1{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: fixed;
+        background-color: #313131b2;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        z-index: 11;
+        top: 50px;
+        right: 0px;
+        visibility: hidden;
+        overflow: hidden;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    #contendor1 ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #contenedor1 ul li{
+        list-style-type: none;
+        padding: 5px 5%;
+    }
+    #contenedor1 ul li a{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+    }
+    #contenedor2 a{
+        color: white;
+    }
+
+    #menuBars{
+        color: white;
+        margin-right: 15px;
+        font-size: 26px;
+    }
+
+    header{
+        width: 100%;
+        height: 488px;
+        overflow: hidden;
+        background-color: black;
+    }
+    #fondoHead{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.5px);
+    }
+    #oscurecer{
+        width: 100%;
+        height: 488px;
+        position: absolute;
+        top: 0px;
+        background-color: black;
+        opacity: 40%;
+    }
+    #cajaHead{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #welcome{
+        color: white;
+        font-family: Calibri;
+        font-weight: lighter;
+        opacity: 75%;
+        padding: 0 0 40px 0;
+    }
+    #titulo{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+        font-size: 28px;
+        padding: 0px 0 40px;
+    }
+    #titulo span{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 35px;
+    }
+    #cajaHead p{
+        color: white;
+        font-family: Calibri;
+        font-size: 20px;
+        opacity: 75%;
+        padding: 0 0 40px 0;
+    }
+    #cajaHead button{
+        padding: 25px 40px;
+        border-radius: 99px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #cajaHead button:hover{
+        background-color: brown;
+        transition: 0.3s ease-in-out;
+    }
+    main{
+        width: 100%;
+        height: 2800px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleServicios{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 50px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #servicios{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        max-width: 1000px;
+        gap: 10px;
+        position: relative;
+        top: 70px;
+        gap: 20px;
+    }
+    .cajaServicios{
+        width: 275px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaServicios:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .iconServicios{
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 99px;
+    }
+    .cajaServicios h2{
+        font-family: Calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .divisorServ{
+        width: 75px;
+        height: 1px;
+        margin: 35px;
+        background-color: black;
+        opacity: 50%;
+    }
+    .cajaServicios p{
+        color: black;
+        font-family: calibri;
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+    }
+    #titleProyectos{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #proyectos{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        max-width: 1000px;
+        justify-content: center;
+        gap: 25px;
+        position: relative;
+        top: 200px;
+    }
+    .cajaProyectos{
+        width: 275px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaProyectos:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos img{
+        width: 50px;
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        box-sizing: initial;
+        margin: 20px;
+        border-radius: 99px;
+        filter: grayscale(100%);
+    }
+    .cajaProyectos h2{
+        font-family: calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .cajaProyectos p{
+        font-family: calibri;
+        font-size: 16px;
+        margin: 25px;
+        width: 250px;
+        text-align: center;
+    }
+    .cajaProyectos button{
+        padding: 15px 30px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: rgb(228, 228, 228);
+        font-family: calibri;
+        font-size: 18px;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #btnProyectos{
+        position: relative;
+        width: 100%;
+        height: 65px;
+        top: 225px;
+        display: flex;
+        justify-content: center;
+    }
+    #masProyectos{
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #titleContacto{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 300px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #contacto{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        top: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #namemail{
+        display: flex;
+        flex-direction: row;
+    }
+    #from_name{
+        padding: 10px;
+        width: 325px;
+        border-radius: 10px;
+        margin: 0 5px 10px 0;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #email_id{
+        padding: 10px;
+        margin: 0 0 10px 5px;
+        width: 325px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #from_tema{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 680px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #message{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 680px;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        resize: none;
+    }
+    #btnMessage{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    #enviarMSG{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover .iconEnviar{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        background-image: url("https://user-images.githubusercontent.com/66705822/100891556-211aa600-3498-11eb-84d7-7e9d43c8331c.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #oscurecer2{
+        background-color: black;
+        opacity: 40%;
+        width: 100%;
+        height: 100%;
+    }
+    #derecho{
+        width: 100%;
+        position: relative;
+        top: -60px;
+        display: flex;
+        justify-content: center;
+    }
+    #derecho h3{
+        color: white;
+        font-family: calibri;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    nav{
+        width: 100vw;
+        height: 50px;
+        background-color: #313131b2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    nav h1{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 35px;
+        margin-left: 45px;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.500);
+    }
+    #btnBars{
+        background-color: transparent;
+        border: none;
+        width: 26px;
+        margin: 0 25px 0 0;
+    }
+    #contenedor1{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: fixed;
+        background-color: #313131b2;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        z-index: 11;
+        top: 50px;
+        right: 0px;
+        visibility: hidden;
+        overflow: hidden;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    #contendor1 ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #contenedor1 ul li{
+        list-style-type: none;
+        padding: 5px 150px;
+    }
+    #contenedor1 ul li a{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+    }
+    #contenedor2 a{
+        color: white;
+    }
+    #contenedor1 ul li:hover{
+        cursor: pointer;
+        background-color: black;
+        transition: 0.2s ease-in-out;
+    }
+
+    #menuBars{
+        color: white;
+        margin-right: 15px;
+        font-size: 26px;
+        display: flex;
+    }
+
+    header{
+        width: 100%;
+        height: 650px;
+        overflow: hidden;
+        background-color: black;
+    }
+    #fondoHead{
+        width: 100%;
+        height: 650px;
+        filter: blur(1.5px);
+    }
+    #oscurecer{
+        width: 100%;
+        height: 650px;
+        position: absolute;
+        top: 0px;
+        background-color: black;
+        opacity: 40%;
+    }
+    #cajaHead{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #welcome{
+        color: white;
+        font-family: Calibri;
+        font-weight: lighter;
+        opacity: 75%;
+        padding: 0 0 40px 0;
+    }
+    #titulo{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+        font-size: 50px;
+        padding: 0px 0 40px;
+    }
+    #titulo span{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 60px;
+    }
+    #cajaHead p{
+        color: white;
+        font-family: Calibri;
+        font-size: 22px;
+        opacity: 75%;
+        padding: 0 0 40px 0;
+    }
+    #cajaHead button{
+        padding: 25px 40px;
+        border-radius: 99px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #cajaHead button:hover{
+        background-color: brown;
+        transition: 0.3s ease-in-out;
+    }
+    main{
+        width: 100%;
+        height: 2500px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleServicios{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 50px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #servicios{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        padding: 10px;
+        max-width: 1000px;
+        gap: 10px;
+        position: relative;
+        top: 70px;
+        gap: 20px;
+    }
+    .cajaServicios{
+        width: 275px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaServicios:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .iconServicios{
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 99px;
+    }
+    .cajaServicios h2{
+        font-family: Calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .divisorServ{
+        width: 75px;
+        height: 1px;
+        margin: 35px;
+        background-color: black;
+        opacity: 50%;
+    }
+    .cajaServicios p{
+        color: black;
+        font-family: calibri;
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+    }
+    #titleProyectos{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #proyectos{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        max-width: 1000px;
+        justify-content: center;
+        gap: 15px;
+        position: relative;
+        top: 200px;
+    }
+    .cajaProyectos{
+        width: 350px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaProyectos:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos img{
+        width: 50px;
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        box-sizing: initial;
+        margin: 20px;
+        border-radius: 99px;
+        filter: grayscale(100%);
+    }
+    .cajaProyectos h2{
+        font-family: calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .cajaProyectos p{
+        font-family: calibri;
+        font-size: 16px;
+        margin: 25px;
+        width: 250px;
+        text-align: center;
+    }
+    .cajaProyectos button{
+        padding: 15px 30px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: rgb(228, 228, 228);
+        font-family: calibri;
+        font-size: 18px;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #btnProyectos{
+        position: relative;
+        width: 100%;
+        height: 65px;
+        top: 225px;
+        display: flex;
+        justify-content: center;
+    }
+    #masProyectos{
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #titleContacto{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 300px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #contacto{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        top: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #namemail{
+        display: flex;
+        flex-direction: row;
+    }
+    #from_name{
+        padding: 10px;
+        width: 325px;
+        border-radius: 10px;
+        margin: 0 5px 10px 0;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #email_id{
+        padding: 10px;
+        margin: 0 0 10px 5px;
+        width: 325px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #from_tema{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 680px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #message{
+        padding: 10px;
+        margin: 0 0 10px 0;
+        width: 680px;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        resize: none;
+    }
+    #btnMessage{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    #enviarMSG{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover .iconEnviar{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        background-image: url("https://user-images.githubusercontent.com/66705822/100891556-211aa600-3498-11eb-84d7-7e9d43c8331c.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #oscurecer2{
+        background-color: black;
+        opacity: 40%;
+        width: 100%;
+        height: 100%;
+    }
+    #derecho{
+        width: 100%;
+        position: relative;
+        top: -60px;
+        display: flex;
+        justify-content: center;
+    }
+    #derecho h3{
+        color: white;
+        font-family: calibri;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+    nav{
+        width: 100vw;
+        height: 50px;
+        background-color: #313131b2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
+    nav h1{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 35px;
+        margin-left: 45px;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.500);
+    }
+    #btnBars{
+        background-color: transparent;
+        border: none;
+        width: 26px;
+        margin: 0 25px 0 0;
+    }
+    #contenedor1{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        position: fixed;
+        background-color: #313131b2;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        z-index: 11;
+        top: 50px;
+        right: 0px;
+        overflow: hidden;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        visibility: hidden;
+    }
+    #contendor1 ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #contenedor1 ul li{
+        list-style-type: none;
+        padding: 5px 150px;
+    }
+    #contenedor1 ul li a{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+    }
+    #contenedor2 a{
+        color: white;
+    }
+    #contenedor1 ul li:hover{
+        cursor: pointer;
+        background-color: black;
+        transition: 0.2s ease-in-out;
+    }
+
+    #menuBars{
+        color: white;
+        margin-right: 50px;
+        font-size: 26px;
+        display: flex;
+        position: relative;
+        z-index: 99;
+    }
+
+    header{
+        width: 100%;
+        height: 650px;
+        overflow: hidden;
+        background-color: black;
+    }
+    #fondoHead{
+        width: 100%;
+        height: 100%;
+        filter: blur(1.5px);
+    }
+    #oscurecer{
+        width: 100%;
+        height: 650px;
+        position: absolute;
+        top: 0px;
+        background-color: black;
+        opacity: 40%;
+    }
+    #cajaHead{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        top: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #welcome{
+        color: white;
+        font-family: Calibri;
+        font-weight: lighter;
+        opacity: 75%;
+        padding: 0 0 60px 0;
+    }
+    #titulo{
+        color: white;
+        font-family: Calibri;
+        font-weight: bold;
+        font-size: 50px;
+        padding: 0px 0 60px;
+    }
+    #titulo span{
+        color: rgba(165, 42, 42, 0.9);
+        font-family: 'Lexend', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto Mono', monospace;
+        font-family: 'VT323', monospace;
+        font-size: 60px;
+    }
+    #cajaHead p{
+        color: white;
+        font-family: Calibri;
+        font-size: 22px;
+        opacity: 75%;
+        padding: 0 0 125px 0;
+    }
+    #cajaHead button{
+        padding: 25px 40px;
+        border-radius: 99px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #cajaHead button:hover{
+        background-color: brown;
+        transition: 0.3s ease-in-out;
+    }
+    main{
+        width: 100%;
+        height: 2500px;
+        background-color: rgb(228, 228, 228);
+        overflow: hidden;
+    }
+    #titleServicios{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 50px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #servicios{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        padding: 10px;
+        max-width: 1000px;
+        gap: 10px;
+        position: relative;
+        top: 70px;
+        gap: 20px;
+        padding: 0 75px;
+    }
+    .cajaServicios{
+        width: 350px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaServicios:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .iconServicios{
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 99px;
+    }
+    .cajaServicios h2{
+        font-family: Calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .divisorServ{
+        width: 75px;
+        height: 1px;
+        margin: 35px;
+        background-color: black;
+        opacity: 50%;
+    }
+    .cajaServicios p{
+        color: black;
+        font-family: calibri;
+        font-size: 18px;
+        width: 300px;
+        text-align: center;
+    }
+    #titleProyectos{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #proyectos{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: auto;
+        max-width: 1000px;
+        justify-content: center;
+        gap: 15px;
+        position: relative;
+        top: 200px;
+        padding: 0 175px;
+    }
+    .cajaProyectos{
+        width: 400px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .cajaProyectos:hover{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos img{
+        width: 50px;
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        box-sizing: initial;
+        margin: 20px;
+        border-radius: 99px;
+        filter: grayscale(100%);
+    }
+    .cajaProyectos h2{
+        font-family: calibri;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .cajaProyectos p{
+        font-family: calibri;
+        font-size: 16px;
+        margin: 25px;
+        width: 250px;
+        text-align: center;
+    }
+    .cajaProyectos button{
+        padding: 15px 30px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        background-color: rgb(228, 228, 228);
+        font-family: calibri;
+        font-size: 18px;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    .cajaProyectos button:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #btnProyectos{
+        position: relative;
+        width: 100%;
+        height: 65px;
+        top: 225px;
+        display: flex;
+        justify-content: center;
+    }
+    #masProyectos{
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #masProyectos:hover .iconProyectos{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+    #titleContacto{
+        color: black;
+        font-family: Calibri;
+        font-size: 24px;
+        position: relative;
+        top: 300px;
+        width: 100%;
+        text-align: center;
+        font-weight: normal;
+    }
+    #contacto{
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        top: 375px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #namemail{
+        display: flex;
+        flex-direction: row;
+    }
+    #from_name{
+        padding: 15px;
+        width: 550px;
+        border-radius: 10px;
+        margin: 0 5px 10px 0;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #email_id{
+        padding: 15px;
+        margin: 0 0 10px 5px;
+        width: 550px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #from_tema{
+        padding: 15px;
+        margin: 0 0 10px 0;
+        width: 1153px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #message{
+        padding: 15px;
+        margin: 0 0 10px 0;
+        width: 1153px;
+        height: 300px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        resize: none;
+    }
+    #btnMessage{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    #enviarMSG{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        font-size: 18px;
+        cursor: pointer;
+        font-family: calibri;
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover{
+        background-color: rgba(165, 42, 42, 0.9);
+        transition: 0.3s ease-in-out;
+    }
+    #enviarMSG:hover .iconEnviar{
+        color: white;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    footer{
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        background-image: url("https://user-images.githubusercontent.com/66705822/100891556-211aa600-3498-11eb-84d7-7e9d43c8331c.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #oscurecer2{
+        background-color: black;
+        opacity: 40%;
+        width: 100%;
+        height: 100%;
+    }
+    #derecho{
+        width: 100%;
+        position: relative;
+        top: -60px;
+        display: flex;
+        justify-content: center;
+    }
+    #derecho h3{
+        color: white;
+        font-family: calibri;
+    }
+}
