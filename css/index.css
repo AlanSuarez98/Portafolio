@@ -2735,7 +2735,7 @@ a{
         gap: 10px;
         position: relative;
         top: 70px;
-        gap: 20px;
+        gap: 100px;
         padding: 0 75px;
     }
     .cajaServicios{
@@ -2798,7 +2798,7 @@ a{
         grid-auto-rows: auto;
         max-width: 1000px;
         justify-content: center;
-        gap: 15px;
+        gap: 150px;
         position: relative;
         top: 200px;
         padding: 0 175px;
