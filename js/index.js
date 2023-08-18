@@ -62,12 +62,12 @@ function redirigirSnake() {
     window.open(urlDestino, '_blank');
 }
 document.getElementById('calculadoraWeb').addEventListener('click', function () {
-    redirigirCalculadora();
+    redirigirMesa();
 });
 
-function redirigirCalculadora() {
+function redirigirMesa() {
     // URL de la página de destino
-    const urlDestino = 'https://calculadoradigitalers.netlify.app/'; // Reemplaza con la URL de tu página de destino
+    const urlDestino = 'https://mesainfinitarosario.com.ar'; // Reemplaza con la URL de tu página de destino
 
     // Redirigir a la página de destino en una nueva pestaña o ventana
     window.open(urlDestino, '_blank');
