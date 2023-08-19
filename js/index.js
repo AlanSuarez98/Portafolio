@@ -3,17 +3,23 @@ document.getElementById('descargarArchivo').addEventListener('click', function (
 });
 
 function descargarArchivo() {
-    // Contenido del archivo que deseas descargar (por ejemplo, un texto o datos binarios)
-    const contenidoArchivo = 'CV Alan Suarez';
+    // Crear un nuevo objeto jsPDF
+    const pdf = new jsPDF();
+
+    // Agregar contenido al PDF (por ejemplo, un texto)
+    pdf.text('CV Alan Suarez', 10, 10);
 
     // Nombre del archivo que se descargará
     const nombreArchivo = 'CV-Alan-Suarez.pdf';
 
+    // Generar los datos del PDF en formato blob
+    const blob = pdf.output('blob');
+
     // Crear un enlace temporal
     const enlaceTemporal = document.createElement('a');
 
-    // Establecer el contenido del archivo en el atributo "href" (codificado en base64)
-    enlaceTemporal.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(contenidoArchivo);
+    // Establecer el contenido del enlace en el blob del PDF
+    enlaceTemporal.href = URL.createObjectURL(blob);
 
     // Establecer el nombre del archivo que se descargará
     enlaceTemporal.download = nombreArchivo;
@@ -27,6 +33,7 @@ function descargarArchivo() {
     // Eliminar el enlace temporal del documento
     document.body.removeChild(enlaceTemporal);
 }
+
 
 document.getElementById('cartelera').addEventListener('click', function () {
     redirigirCartelera();
