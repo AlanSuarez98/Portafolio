@@ -134,7 +134,7 @@ a{
         opacity: 75%;
         padding: 0 0 40px 0;
     }
-    #cajaHead button{
+    #cajaHead a{
         padding: 25px 40px;
         border-radius: 99px;
         background-color: transparent;
@@ -145,7 +145,7 @@ a{
         font-family: calibri;
         transition: 0.3s ease-in-out;
     }
-    #cajaHead button:hover{
+    #cajaHead a:hover{
         background-color: brown;
         transition: 0.3s ease-in-out;
     }
@@ -556,7 +556,7 @@ a{
         opacity: 75%;
         padding: 0 0 40px 0;
     }
-    #cajaHead button{
+    #cajaHead a{
         padding: 25px 40px;
         border-radius: 99px;
         background-color: transparent;
@@ -567,7 +567,7 @@ a{
         font-family: calibri;
         transition: 0.3s ease-in-out;
     }
-    #cajaHead button:hover{
+    #cajaHead a:hover{
         background-color: brown;
         transition: 0.3s ease-in-out;
     }
@@ -979,7 +979,7 @@ a{
         opacity: 75%;
         padding: 0 0 40px 0;
     }
-    #cajaHead button{
+    #cajaHead a{
         padding: 25px 40px;
         border-radius: 99px;
         background-color: transparent;
@@ -990,7 +990,7 @@ a{
         font-family: calibri;
         transition: 0.3s ease-in-out;
     }
-    #cajaHead button:hover{
+    #cajaHead a:hover{
         background-color: brown;
         transition: 0.3s ease-in-out;
     }
@@ -1401,7 +1401,7 @@ a{
         opacity: 75%;
         padding: 0 0 40px 0;
     }
-    #cajaHead button{
+    #cajaHead a{
         padding: 25px 40px;
         border-radius: 99px;
         background-color: transparent;
@@ -1412,7 +1412,7 @@ a{
         font-family: calibri;
         transition: 0.3s ease-in-out;
     }
-    #cajaHead button:hover{
+    #cajaHead a:hover{
         background-color: brown;
         transition: 0.3s ease-in-out;
     }
@@ -1828,7 +1828,7 @@ a{
         opacity: 75%;
         padding: 0 0 40px 0;
     }
-    #cajaHead button{
+    #cajaHead a{
         padding: 25px 40px;
         border-radius: 99px;
         background-color: transparent;
@@ -1839,7 +1839,7 @@ a{
         font-family: calibri;
         transition: 0.3s ease-in-out;
     }
-    #cajaHead button:hover{
+    #cajaHead a:hover{
         background-color: brown;
         transition: 0.3s ease-in-out;
     }
@@ -2259,7 +2259,7 @@ a{
         opacity: 75%;
         padding: 0 0 125px 0;
     }
-    #cajaHead button{
+    #cajaHead a{
         padding: 25px 40px;
         border-radius: 99px;
         background-color: transparent;
@@ -2270,7 +2270,7 @@ a{
         font-family: calibri;
         transition: 0.3s ease-in-out;
     }
-    #cajaHead button:hover{
+    #cajaHead a:hover{
         background-color: brown;
         transition: 0.3s ease-in-out;
     }
