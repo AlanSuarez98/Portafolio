@@ -20,13 +20,13 @@ function redirigirGIF() {
   // Redirigir a la página de destino en una nueva pestaña o ventana
   window.open(urlDestino, "_blank");
 }
-document.getElementById("snakeGames").addEventListener("click", function () {
-  redirigirSnake();
+document.getElementById("cobraGames").addEventListener("click", function () {
+  redirigirCobraGames();
 });
 
-function redirigirSnake() {
+function redirigirCobraGames() {
   // URL de la página de destino
-  const urlDestino = "https://snakegameonline.netlify.app/"; // Reemplaza con la URL de tu página de destino
+  const urlDestino = "https://tiendacobragames.onrender.com/"; // Reemplaza con la URL de tu página de destino
 
   // Redirigir a la página de destino en una nueva pestaña o ventana
   window.open(urlDestino, "_blank");
